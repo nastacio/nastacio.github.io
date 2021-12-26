@@ -1,0 +1,66 @@
+apiVersion: machine.openshift.io/v1beta1
+kind: MachineSet
+metadata:
+  labels:
+    hive.openshift.io/machine-pool: worker
+    hive.openshift.io/managed: "true"
+    machine.openshift.io/cluster-api-cluster: dnawsspot-8t7pn
+  name: dnawsspot-8t7pn-worker-us-east-1a
+  namespace: openshift-machine-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      machine.openshift.io/cluster-api-cluster: dnawsspot-8t7pn
+      machine.openshift.io/cluster-api-machineset: dnawsspot-8t7pn-worker-us-east-1a
+  template:
+    metadata:
+      labels:
+        machine.openshift.io/cluster-api-cluster: dnawsspot-8t7pn
+        machine.openshift.io/cluster-api-machine-role: worker
+        machine.openshift.io/cluster-api-machine-type: worker
+        machine.openshift.io/cluster-api-machineset: dnawsspot-8t7pn-worker-us-east-1a
+    spec:
+      lifecycleHooks: {}
+      metadata: {}
+      providerSpec:
+        value:
+          ami:
+            id: ami-0dda0c86141adbb55
+          apiVersion: machine.openshift.io/v1beta1
+          blockDevices:
+            - ebs:
+                encrypted: true
+                iops: 2000
+                kmsKey:
+                  arn: ""
+                volumeSize: 100
+                volumeType: io1
+          credentialsSecret:
+            name: aws-cloud-credentials
+          deviceIndex: 0
+          iamInstanceProfile:
+            id: dnawsspot-8t7pn-worker-profile
+          instanceType: m5.xlarge
+          kind: AWSMachineProviderConfig
+          metadata:
+            creationTimestamp: null
+          metadataServiceOptions: {}
+          placement:
+            availabilityZone: us-east-1a
+            region: us-east-1
+          securityGroups:
+            - filters:
+                - name: tag:Name
+                  values:
+                    - dnawsspot-8t7pn-worker-sg
+          subnet:
+            filters:
+              - name: tag:Name
+                values:
+                  - dnawsspot-8t7pn-private-us-east-1a
+          tags:
+            - name: kubernetes.io/cluster/dnawsspot-8t7pn
+              value: owned
+          userDataSecret:
+            name: worker-user-data

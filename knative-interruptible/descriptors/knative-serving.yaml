@@ -1,0 +1,13 @@
+---
+apiVersion: operator.knative.dev/v1alpha1
+kind: KnativeServing
+metadata:
+  name: knative-serving
+  namespace: knative-serving
+spec:
+  cluster-local-gateway: {}
+  controller-custom-certs:
+    name: ''
+    type: ''
+  knative-ingress-gateway: {}
+  registry: {}

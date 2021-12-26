@@ -1,0 +1,46 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: knative-interruptible
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: mywork
+  namespace: knative-interruptible
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/target-utilization-percentage: "70"
+        autoscaling.knative.dev/target: "10"
+    spec:
+      containerConcurrency: 15
+      containers:
+        - image: "gcr.io/knative-samples/autoscale-go:0.1"
+          name: user-container
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "200m"
+            limits:
+              memory: "256Mi"
+              cpu: "200m"
+      enableServiceLinks: false
+
+      # Schedule pods in nodes labeled 
+      # "sourcepatch.com/node.interruptible"
+      # and tolerate their respective taints.
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key:  sourcepatch.com/node.interruptible
+                    operator: Exists
+                    values: []
+      tolerations:
+        - key: "workload.sourcepatch.com/interruptible"
+          operator: "Exists"
+          effect: "NoSchedule"
