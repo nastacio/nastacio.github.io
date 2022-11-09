@@ -456,7 +456,7 @@ This section shows all components working together. The first step is to create 
 
 ### Create service definitions
 
-A Knative service definition is analogous to pairing a Kubernetes workload definition with a Kubernetes service. You can read the entire service specification for details, which I summarize as follows:
+A [Knative service](https://github.com/knative/specs/blob/main/specs/serving/overview.md#service) definition is analogous to pairing a Kubernetes workload definition with a Kubernetes service. You can read the entire service specification for details, which I summarize as follows:
 
 - Container settings, such as image source, resource requests, limits, probe definitions
 - Service settings include the service's endpoint URL, target concurrency, and throughput metrics.
