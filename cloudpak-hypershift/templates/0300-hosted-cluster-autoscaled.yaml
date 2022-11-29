@@ -1,0 +1,73 @@
+---
+apiVersion: cluster.open-cluster-management.io/v1alpha1
+kind: HypershiftDeployment
+metadata:
+  name: cloudpak-autoscale
+  namespace: clusters
+spec:
+  hostingCluster: local-cluster
+  hostingNamespace: clusters
+  hostedClusterSpec:
+    networking:
+      machineCIDR: 10.0.0.0/16 # Default
+      networkType: OVNKubernetes
+      podCIDR: 10.132.0.0/14 # Default
+      serviceCIDR: 172.31.0.0/16 # Default
+    platform:
+      type: AWS
+    pullSecret:
+      name: cloudpak-autoscale-pull-secret # This secret is created by the controller
+    release:
+      # CUSTOMIZATION FOR CLOUD PAKS
+      # The default OCP release is 4.11, which is currently not supported by Cloud Paks
+      image: quay.io/openshift-release-dev/ocp-release:4.10.41-x86_64
+    services:
+      - service: APIServer
+        servicePublishingStrategy:
+          type: LoadBalancer
+      - service: OAuthServer
+        servicePublishingStrategy:
+          type: Route
+      - service: Konnectivity
+        servicePublishingStrategy:
+          type: Route
+      - service: Ignition
+        servicePublishingStrategy:
+          type: Route
+    sshKey: {}
+  nodePools:
+    - name: cloudpak-autoscale-us-east-1a
+      spec:
+        autoScaling:
+          min: 3
+          max: 6
+        clusterName: cloudpak-autoscale
+        management:
+          autoRepair: false
+          replace:
+            rollingUpdate:
+              maxSurge: 1
+              maxUnavailable: 0
+            strategy: RollingUpdate
+          upgradeType: Replace
+        platform:
+          aws:
+            # CUSTOMIZATION FOR CLOUD PAKS
+            # The default instance type and root volumes need to be increased.
+            instanceType: m5.4xlarge
+            rootVolume:
+              iops: 2000
+              size: 100
+              type: io1
+          type: AWS
+        release:
+          # CUSTOMIZATION FOR CLOUD PAKS
+          # The default OCP release is 4.11, which is currently not supported by Cloud Paks
+          image: quay.io/openshift-release-dev/ocp-release:4.10.41-x86_64
+  infrastructure:
+    cloudProvider:
+      name: aws-hosted-clusters
+    configure: True
+    platform:
+      aws:
+        region: us-east-1
