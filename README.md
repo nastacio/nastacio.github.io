@@ -5,6 +5,7 @@
 | Title | Date  |
 | - | - |
 | [Running Knative services on AWS spot instances](knative-interruptible/README.md) | 2022-10 |
+| [Multi-cloud DNS delegation between GCP and AWS](gcp-dns-aws-route53/README.md) | 2022-11 |
 
 ---
 
