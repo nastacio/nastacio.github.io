@@ -4,8 +4,9 @@
 
 | Title | Date  |
 | - | - |
-| [Running Knative services on AWS spot instances](knative-interruptible/README.md) | 2022-10 |
+| [Using Let's Encrypt certificates on managed clusters with OpenShift Hive](hive-trusted-api-endpoint/README.md) | 2022-12 |
 | [Multi-cloud DNS delegation between GCP and AWS](gcp-dns-aws-route53/README.md) | 2022-11 |
+| [Running Knative services on AWS spot instances](knative-interruptible/README.md) | 2022-10 |
 
 ---
 

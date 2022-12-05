@@ -1,0 +1,48 @@
+<mxfile host="65bd71144e">
+    <diagram id="tyUMEAxuVILt1RDdG620" name="Page-1">
+        <mxGraphModel dx="1138" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="413" pageHeight="583" background="#FFFFFF" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="14" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry width="400" height="400" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Managed clusters" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;horizontal=1;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="220" width="180" height="400" as="geometry"/>
+                </mxCell>
+                <object label="Resources" id="15">
+                    <mxCell parent="0"/>
+                </object>
+                <mxCell id="3" value="Cluster 1" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/OpenShift.svg;" vertex="1" parent="15">
+                    <mxGeometry x="280" y="62" width="50" height="46" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="K8s API" style="edgeStyle=none;html=1;" edge="1" parent="15" source="4" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="K8s API" style="edgeStyle=none;html=1;" edge="1" parent="15" source="4" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="K8s API" style="edgeStyle=none;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="15" source="4" target="6">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="99.27573774161306" y="270.0021889231229" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="OpenShift Hive" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;fontColor=#4277BB;labelBackgroundColor=#ffffff;fontSize=12;spacingTop=3;image;image=img/lib/ibm/management/cloud_management.svg;" vertex="1" parent="15">
+                    <mxGeometry x="40" y="140" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Cluster 2" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/OpenShift.svg;" vertex="1" parent="15">
+                    <mxGeometry x="280" y="142" width="50" height="46" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Cluster N" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/OpenShift.svg;" vertex="1" parent="15">
+                    <mxGeometry x="280" y="293.45" width="50" height="46" as="geometry"/>
+                </mxCell>
+                <object label="Signed Resources" id="16">
+                    <mxCell parent="0"/>
+                </object>
+                <mxCell id="12" value="???" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.certificate;fillColor=#5294CF;gradientColor=none;" vertex="1" parent="16">
+                    <mxGeometry x="174" y="251" width="24.32" height="33" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
