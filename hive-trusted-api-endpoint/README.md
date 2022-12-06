@@ -269,12 +269,12 @@ oc describe ClusterDeployment "${managed_cluster_name}" \
     --namespace "${managed_cluster_name}"
 ```
 
-The command 
+The command output should contain the following excerpt arount the `Unreachable` condition:
 
 ```txt
     ...
-    Last Probe Time:          2022-12-06T15:27:31Z
-    Last Transition Time:     2022-12-06T15:27:31Z
+    Last Probe Time:          ...
+    Last Transition Time:     ...
     Message:                  cluster is reachable
     Reason:                   ClusterReachable
     Status:                   False
