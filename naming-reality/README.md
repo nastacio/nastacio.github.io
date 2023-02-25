@@ -8,8 +8,6 @@ Naming, but not in the way you think
 ![An iceberg floating in the ocean. The sea has a label of "Reality". The submerged portion of the iceberg has a label of "Knowledge". The portion of the iceberg above the waterline has a label of "Names". A sticky figure sits on a tiny canoe to the right of the iceberg, representing what could be a software developer.](images/Naming-figure-iceberg-composite.png "Our knowledge represents a minute portion of reality. Names are the visible portion of that knowledge.
 ")
 
-Our knowledge represents a minute portion of reality. Names are the visible portion of that knowledge.
-
 Phil Karlton once said, _“there are only two hard things in Computer Science: cache invalidation and naming things.”_
 
 One is a real problem; the other is a problem of defining reality.
@@ -52,8 +50,6 @@ The simplest form of semantic network contains entities and relationships:
 
 ![A diagram on the left shows a graph with a few circles connected by lines. Circles are labeled "entities" and the lines connecting circles are labeled "relationships". The right-side shows a graph with specific entities and relationships, resembling how one would memorize the parts of a tree. That graph has nodes labeled like "tree," "branches," "leaves," and "fruit."](images/Naming-figure-semantic-network-composite.png "Semantic networks (on the left) identify and connect entities. Semantic networks become increasingly denser as we learn more about a subject, with new entities continuously added to the network. Our brains also reorganize those networks as we learn more about a topic.")
 
-Semantic networks (on the left) identify and connect entities. Semantic networks become increasingly denser as we learn more about a subject, with new entities continuously added to the network. Our brains also reorganize those networks as we learn more about a topic.
-
 While a semantic network represents the world, there are different and equally valid representations. Some representations differ in **depth** (seeing the world in more detail,) and others differ in **perspective** (seeing the world from different angles.)
 
 Let’s start with an example of teaching someone about the origins of fruits.
@@ -69,8 +65,6 @@ Apiologists — experts on honey bees — examining trees certainly have many of
 That is a difference in **perspective**.
 
 ![Drawing of three pears. On the center there is a reasonably decent drawing of a pear, with some shading and some detail around the stem and leaves. On the left, there is a crude drawing of the pear, mostly an outline. On the right, there is a detailed drawing, with a cutout showing the location of seeds, and a more detailed representation of the leaves. There are also multiple callouts on the detailed drawing, showing tables of information about planting seasons and vitamins.](images/Naming-figure-reality-pear.png "The lifelong study of a subject makes different individuals see the same object differently. A simple fruit may evoke increasingly sophisticated and unrelated concepts depending on the observer's expertise.")
-
-The lifelong study of a subject makes different individuals see the same object differently. A simple fruit may evoke increasingly sophisticated and unrelated concepts depending on the observer’s expertise.
 
 These differences introduce two fundamental challenges in dealing with reality, which you may start to recognize in software development:
 
@@ -93,8 +87,6 @@ But what happens when someone’s reality does not obey the rules of space, matt
 That is the software conundrum, emphasis on “soft” (virtual) as opposed to “hard” (concrete.) Software developers don’t simply assign names to entities in their world. _Often, they create those entities._
 
 ![](images/Naming-figure-virtual-reality.png "A software developer may interpret reality in more or less obvious ways to another observer. Some concepts may be simple and shared across different developers. Other concepts may require complex explanations and the formation of new semantic networks across the team before people can collaborate around it.")
-
-A software developer may interpret reality in more or less obvious ways to another observer. Some concepts may be simple and shared across different developers. Other concepts may require complex explanations and the formation of new semantic networks across the team before people can collaborate around it.
 
 As such, software developers face naming decisions more frequently than people in other professions.
 
@@ -141,8 +133,6 @@ It is no surprise that designers and developers now and then favor [using metaph
 
 ![](images/Naming-figure-metaphor.png "Metaphors are the canned version of a new semantic network. The recipient could build a new semantic network "from scratch" but may be able to build a little faster, if not less perfectly, from a pre-existing fragment of a similar semantic network.")
 
-Metaphors are the canned version of a new semantic network. The recipient could build a new semantic network “from scratch” but may be able to build a little faster, if not less perfectly, from a pre-existing fragment of a similar semantic network.
-
 An example of a simple metaphor is using a “trash” icon to delete files from a computer. A more elaborate example of a metaphor is the co-opting of the concept of “queues” in messaging systems.
 
 There are (at least) two problems with using metaphors, though.
@@ -188,8 +178,6 @@ As an example of a real-world abstraction, think of online shopping, where the b
 
 ![Three-tier diagram. The top-third shows a computer screen showing a clothing item with a price and a "Buy" button next to it. The middle tier shows a semantic network modeling an online shopping process, with entities such as "store," "consumer," "goods," and "merchant." The bottom tier depicts a real-world street view of a clothing shop.](images/Naming-figure-abstraction-composite.png "A system designer observing reality must make informed decisions about what portions of that reality are essential in a new reality: the new system. That new reality is an abstraction of the original reality.")
 
-A system designer observing reality must make informed decisions about what portions of that reality are essential in a new reality: the new system. That new reality is an abstraction of the original reality.
-
 While abstractions are not unique to software, the software industry is unique in how quickly it stacks abstractions on top of abstractions. That stacking creates inscrutable layers of semantic networks requiring steep learning curves.
 
 To illustrate how “tall” those software abstraction stacks can get, let’s attempt to explain a **Kubernetes cluster** to a layperson:
@@ -220,8 +208,6 @@ As a warm-up exercise in software development, let’s look at the narrow scope 
 Loop controls require naming index variables or enumerated elements. Those naming decisions are largely derivative and inconsequential. For example, when it comes to index variables, the default decision often follows the [historical pattern](https://news.ycombinator.com/item?id=1971507) of single-character names like “**i**,” “**j**,” and “**k**.”
 
 ![](images/Naming-figure-cart-total.png "Two different developers with similar training and confronted with the same abstract definition of a simple task may arrive at solutions that look very similar. That agreement may dissipate when the same developers deal with higher-level abstractions.")
-
-Two different developers with similar training and confronted with the same abstract definition of a simple task may arrive at solutions that look very similar. That agreement may dissipate when the same developers deal with higher-level abstractions.
 
 Move past loop controls, and we are dealing with naming entities with a higher semantic purpose. At that point, we are probably trying to make the names fit within the purpose of the function containing the variables.
 
@@ -267,8 +253,6 @@ In a few more words, pre-existing code in a system is not a static artifact. It 
 Rewriting code is not a pointless exercise in rebuilding what is already in a code repository. It is an exercise in creating an equilibrium between what the developer knows and the written representation of that knowledge. That alignment enables the developer to work with the code base more productively. The rewritten code base _is a byproduct of a learning activity_.
 
 ![](images/Naming-figure-rewrite.png "If the source code does not match how the developer thinks about what the code should do, many developers may find it easier to rewrite the code than rebuild their mental structures and reasoning about the problem being solved.")
-
-If the source code does not match how the developer thinks about what the code should do, many developers may find it easier to rewrite the code than rebuild their mental structures and reasoning about the problem being solved.
 
 Note that I explicitly address a scenario where the codebase is transferred from one developer to another. [Code ownership](https://wiki.c2.com/?CodeOwnership), whether following an individual or a shared model, is a topic for a future posting.
 
