@@ -4,11 +4,12 @@
 
 | Title | Date  |
 | - | - |
-| [Rewriting the most critical system in the world](rewriting-education/README.md) | 2023-02 |
-| [What is the hardest thing in software development?](naming-reality/README.md) | 2022-12 |
-| [Using Let's Encrypt certificates on managed clusters with OpenShift Hive](hive-trusted-api-endpoint/README.md) | 2022-12 |
-| [Multi-cloud DNS delegation between GCP and AWS](gcp-dns-aws-route53/README.md) | 2022-11 |
-| [Running Knative services on AWS spot instances](knative-interruptible/README.md) | 2022-10 |
+| [The Educator Who Taught the World](montessori/README.md) | 2023-03 |
+| [Rewriting the Most Critical System in the World](rewriting-education/README.md) | 2023-02 |
+| [What Is the Hardest Thing in Software Development?](naming-reality/README.md) | 2022-12 |
+| [Using Let’s Encrypt Certificates on Managed Clusters With Openshift Hive](hive-trusted-api-endpoint/README.md) | 2022-12 |
+| [Multi-cloud DNS Delegation Between Gcp and AWS](gcp-dns-aws-route53/README.md) | 2022-11 |
+| [Running Knative Services on AWS Spot Instances](knative-interruptible/README.md) | 2022-10 |
 
 ---
 
