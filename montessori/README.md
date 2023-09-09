@@ -12,9 +12,9 @@ It covers three centuries, four continents, world wars, and influences some of t
 
 This is the story of **Dr. Maria Montessori**, the Italian physician and educator who traveled the world promoting a better way of teaching children.
 
-There was enough struggle, sacrifice, and redemption to fill a novel, but she reduced those challenges to side stories.
+There was enough struggle, sacrifice, and redemption to fill a novel, but the real story was one of extraordinary determination, thought leadership, resiliency, and strategic thinking.
 
-The real story was one of extraordinary determination, thought leadership, advocacy, resiliency, courage, and strategic thinking. All in service of a singular mission still changing the world several decades after the end of her long life, in 1952.
+All in service of a singular mission still changing the world several decades after her death, in 1952.
 
 She did the work of giants.
 
@@ -98,7 +98,7 @@ In her home country, Benito Mussolini took power in 1922, and soon after, they e
 
 While some may be quick to judge the association with Mussolini, there is another lesson here about the balance between significant change and purity tests. The line delineating the balance can get muddied, and you better know where you stand when it becomes hard to see it.
 
-The association with Mussolini served her cause, and the Montessori method was declared the educational method of the land. By 1930, things started to sour. Dr. Montessori began to advocate for peace and toe against a central tenet of fascism, refusing to steer her method towards the indoctrination of children with an unquestionable support of the state.
+The association with Mussolini served her cause, and the Montessori method was declared the educational method of the land. By 1930, things started to sour. Dr. Montessori began to advocate for peace and refused to morph her method into a tool for the indoctrination of children with an unquestionable support of the state.
 
 The line would not move.
 
