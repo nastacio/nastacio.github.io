@@ -1,0 +1,235 @@
+# When You Should Use Bash Over Python
+
+*In the Cloud, It Is the Right Choice.*
+
+![John Wick standing in a menacing stance with a city skyline and his iconic mustang in the background..](images/bash-python-main.png)
+
+_“If it needs more than 50 lines, I am using Python.”_
+
+I heard this comment during the Q&A portion of a session I had just presented.
+
+The session was related to wiring service instances inside a private subnet in a Cloud provider. I had shared a few examples written in the Bash programming language. The examples used the Cloud provider’s command-line interface to locate the subnet, query a couple of fields, and pass the fields as parameters to invoke other tools.
+
+The exact topic is unimportant, but it was the typical scenario of task automation in Cloud operations, spawning processes, chaining outputs, and grepping files.
+
+I did not push back on that comment, partly because it was not relevant to the main topic, but also because discussing programming languages tends to get protracted and tribal. There is a time and place.
+
+---
+
+## Impressive Expressiveness
+
+Every programming language has its strengths and weaknesses.
+
+Python’s strengths are too many to list; it is also my data analysis and transformation tool of choice. Still, _it is not as good as Bash in its turf of interacting with processes, utilities, and file systems_. You _can_ do it with Python, but at a higher cost spread across multiple layers:
+
+* _Syntax_: It takes additional and lengthier lines of code to represent a typical Bash script statement invoking an operating system utility.
+* _Runtime_: Python runtime environment and package dependencies — Shell script interpreters are ubiquitous in production environments where Python is unavailable — more on that topic later.
+* _Semantics_: Python abstracts operating system utilities using packages like “subprocess” and “psutil.” While convenient, there is a cognitive cost in translating scripting commands and outputs to Python statements and data structures.
+
+The better argument for Python is that size correlates with complexity and extra “glue” code, where Python’s general-purpose nature starts to offset its clunkiness around Bash’s strengths.
+
+However, this story shows why that switch-off point is higher than people think, either in size or complexity. And when automating infrastructure tasks away from a development laptop — where else are you using Bash? — there are better options once you cross the threshold.
+
+Before we begin, a few words about Bash.
+
+---
+
+## The Word of Bash
+
+[Bash](https://www.gnu.org/software/bash/) means “Bourne-Again SHell,” a multilayered play of words between the religious concept of “[rebirth](https://en.wikipedia.org/wiki/Born_Again)” and its predecessor’s name, the “[Bourne Shell](https://en.wikipedia.org/wiki/Bourne_shell).”
+
+First released in 1989, its distinguished lineage [traces back](https://www.quora.com/Why-did-the-Bourne-shell-replace-the-Thompson-shell) to the primordial [Thompson Shell](https://en.wikipedia.org/wiki/Thompson_shell), shipped along with the first version of Unix in 1971.
+
+Bash, like its forebears, is both an interactive command interpreter and a [scripting language](https://en.wikipedia.org/wiki/Scripting_language), containing most of the features associated with programming languages.
+
+Along with other shell variants, and more so than its brethren, Bash is the _“de facto”_ standard for interacting with the \*nix variants powering the Internet’s core. **Update on 4/10/23:** Paul Vixie, in the comments section, makes a great implicit point that if you can stick with the POSIX syntax of the original shell, that enhances portability of scripts to resource-constrained environments, specially containers.
+
+The [latest major release](https://en.wikipedia.org/wiki/Bash_(Unix_shell)#Release_history), 5.0, came out in early 2019, with Bash 4 probably still representing the bulk of deployments in the field. macOS is the \*nix outlier, still shipping [Bash 3](https://medium.com/itnext/upgrading-bash-on-macos-7138bd1066ba) — 13 years after Bash 4 came out — and making [Z Shell](https://zsh.sourceforge.io/) the default shell interpreter in the macOS Terminal.
+
+As explained in the following sections, Bash’s longevity is rooted in core strengths that still resonate in the technology industry.
+
+---
+
+## Reason #1: Mastery Matters
+
+Unsurprisingly, there are many articles about switching from Bash to Python scripting.
+
+The rewrite may be a sensible choice for the right set of use cases. Still, a pervasive class of articles muddies the discussion: _the strawman snippet comparison_.
+
+These articles have two central elements:
+
+1. **Emphasize the weakest features** of Bash’s scripting language.
+2. Start from the **ugliest snippets of Bash scripting** this side of the 90s.
+
+The Bash scripting language indeed has troubling corners, such as its [crude error handling](https://pythonspeed.com/articles/shell-scripts/), [limited data types](https://tldp.org/LDP/abs/html/untyped.html), and data structures restricted to [arrays](https://linuxize.com/post/bash-arrays/) and [maps](https://opensource.com/article/20/6/associative-arrays-bash).
+
+Now, the syntax around those edges may not look civilized to you, but these limitations are engineering choices that fit the purpose of minimal resource utilization — more on that soon.
+
+Any valid comparison must start from code examples written with a working knowledge of the language. Those snippets, however, are all similar in their sins:
+
+1. **Long, unbroken stretches of statements**. Bash has [functions](https://phoenixnap.com/kb/bash-function#:~:text=There%20are%20two%20ways%20to,the%20terminal%20as%20a%20command.), and functions can and should use local variables.
+2. **Uppercase variable names everywhere**, preferably mixed with lowercase variable names for maximum aesthetic mayhem.
+3. **No** [**error handling settings**](http://redsymbol.net/articles/unofficial-bash-strict-mode/) in the script, which inherits whatever set of error flags from the environment happens to be enabled before running the script.
+
+A cursory read of the [Bash manual](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html) can address these fundamental problems. I also recommend the excellent article [“Learn Bash error handling by example”](https://www.redhat.com/sysadmin/bash-error-handling) to learn about syntax and strategies for handling errors.
+
+_“But I don’t want to spend time learning something as old as shell scripting. It will eventually go away.”_
+
+That is a more honest argument, but it takes focus, commitment, and sheer will to avoid Bash in a world where even [Windows has embraced Linux](https://learn.microsoft.com/en-us/windows/wsl/about), leading us to the next section.
+
+---
+
+## Reason #2: Bash is Everywhere
+
+Shell interpreters are a part of the operating system as a matter of design and architecture.
+
+Shell scripting is the unifying language atop the layer of libraries and utilities underpinning the Unix philosophy of highly efficient and specialized tools.
+
+Wherever you find a Unix kernel ticking, like the Boogeyman, you will find a Bash shell interpreter standing in the background.
+
+Want to work with Python scripting on a virtual machine? You need the _right_ Python interpreter first.
+
+> “That is not a good reason. Most Unix distributions bundle a Python runtime environment. And I can install Python quickly otherwise.”
+
+Sidestepping the discussions about the Python version to pick, the best way to install Python on a given environment, or how to navigate the ensuing pipenv/virtualenv/conda/etc gymnastics to keep dependencies and environments in check, _“being everywhere”_ is more than that. The availability of a scripting engine is as much about the presence of binaries on a compute instance as it is about a standardized location and version of that engine.
+
+Given the fragmentation of Python runtime versions and (sometimes) mutually exclusive dependency matrix on package imports, it is no surprise that Python-based behemoths either repackage the entire Python runtime — the AWS CLI comes to mind — and advise other application developers to not reference that runtime — like the [yum](https://en.wikipedia.org/wiki/Yum_(software)) package manager utility. **Update on 4/10**: This paragraph was rewritten after Damian Keska, in the comments section, correctly pointed out an incorrect generalization in the original text, where I stated in absolute terms that Python would not be installed in some Unix distributions.
+
+There is also an insurmountable difference between knowing what to download and being able to download something, leading to the following section.
+
+---
+## Reason #3: Secured Production Environments
+
+During development and prototyping, it is common to have long-running machines with inbound and outbound network access to the Internet. The unimpeded access enables developers to install different versions of runtime environments and interact with public package managers.
+
+In a production environment, however, anything deployed to a computing unit, whether a VM or a hypervisor, must be validated and approved for deployment.
+
+Go further into regulated industries, and you start hearing expressions like “[air-gapped networks](https://www.redhat.com/sysadmin/air-gapped-networks),” “portable storage,” and “[bastion hosts](https://en.wikipedia.org/wiki/Bastion_host).”
+
+In an air-gapped network, computing instances sit in a private network with limited — and tightly controlled — outside access. And by tightly, I mean the kind of access where someone has to call someone to open a ticket, then wait for the next month to get it approved and wait for the next quarter to get it deployed. _If_ the ticket is approved.
+
+![Perspective drawing of the Continental building from the John Wick movie series.](images/bash-python-continental.png)
+
+> “But I could bundle a Python runtime environment in all images deployed to production!”
+
+Adding a Python runtime environment to base virtual machine images for production environments is definitely possible. However, those runtime environments can be large, even if you are seriously committed to — or compromised with — a single version of the Python runtime environment.
+
+And there are difficult tradeoffs when picking that one version, such as the ones outlined in [this thread](https://www.reddit.com/r/Python/comments/qiyeqi/python_38_39_or_310_for_new_projects/). Consider that whatever Python runtime environment you lock into a production environment reflexively becomes the default version for development, lest someone import a library that is not present where you need it.
+
+Even if one or more Python interpreters are baked into virtual machine images and can be found inside the private network, there is still the matter of dealing with import statements in those programs.
+
+That is also where you start hearing expressions from CISO and SecOps types like “attack surface,” “[software supply chain security,](https://www.redhat.com/en/topics/security/what-is-software-supply-chain-security)” and other scary-sounding things.
+
+Running package managers safely inside a production environment is possible, but everything’s got a price.
+
+> “And how about Bash, huh?”
+
+Bash? Bash will be there. And if you need to “transplant” a snippet of scripting from your local computer while working through an outage — maybe your local text editor is much better than the “vi” editor you find in most virtual machines — you can use [here-document](https://en.wikipedia.org/wiki/Here_document) notation to copy-paste the script from our computer into the shell to the remote system.
+
+You could do that with a Python script, too, as long as it does not import any package not already installed in the system or mirrored to the would-be private package manager.
+
+_“What-ever! I would rather deal with all that than help perpetuate such obsolete technology.”_
+
+I get it. However, we must address a giant elephant in the room. Actually, it is more like a few hundred tiny mice, as explained in the following section.
+
+---
+
+## Reason #4: Container Runtimes
+
+A virtual machine pairs an entire operating system with at least some adequate form of filesystem storage. With the proper motivation, you can get Python in that machine.
+
+With containers, however, unless that container is running a Python application, it will not have a Python runtime. And even if your shop is a hard-core lair of pythonists and everything you develop _is_ a Python application, typical systems will still run 3rd-party containers that are not written in Python.
+
+Do you want to know which scripting environment will be in virtually all those containers? The myth, the legend: Bash.
+
+With containers being everywhere and reaching the domain of continuous delivery tools — [Tekton](https://tekton.dev), [Jenkins X](https://jenkins-x.io/), [Flux](https://fluxcd.io/), and [Argo CD](https://argoproj.github.io/cd/) coming to mind — being able to author beautiful and efficient shell scripting is a virtual necessity.
+
+There may be more sophisticated tools for writing a script. Still, a pencil that is always sitting on the counter is often the better choice.
+
+---
+
+## Reason #5: The Universal Language of Platforms
+
+Pick any layer of the Cloud infrastructure. IaaS, PaaS, SaaS, serverless, anything. It will have a vendor-supported command-line interface, ideal for Bash scripting. It _may_ have a client API library, which may or may not be vendor-supported.
+
+Just two weeks ago, I had to do a prototype to provision an AWS EKS cluster with block storage, NFS, and a load balancer. I reviewed the product documentation and tutorials, with dozens of pages based on “aws” and “eksctl” command-line interfaces. Not a Python example in sight.
+
+Are there excellent client library alternatives for that prototype? Indeed, [there are](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html). Do all vendor-supported CLIs for major Cloud infrastructure providers have one? Most definitely, not.
+
+> “You could have built the same cluster prototype with Python!”
+
+Yes, but at what cost? All examples were offered as command-line interfaces, so I had several pages filled with command-line invocations at the end of the exercise.
+
+And remember how Bash is both an interactive command interpreter _AND_ a scripting language? That means those notes are also **_reusable running code_** with minimal editing. And by minimal, I mean straightforward tasks like moving blocks of commands inside functions and adding error handling.
+
+Could I have converted the approximate 100 (long) lines of commands to Python? Yes. It would take a couple of days in syntactical and semantical translations to get a result with more lines of code that were less readable than its Bash counterpart.
+
+And why?
+
+Would it be more maintainable? No. All original samples in the docs were written using the command-line interface. All Internet forums reference the command-line interface. After the initial translation, every question and answer would require the same translation.
+
+Assuming the answer is still “yes,” and you are committed to investing a few hours in rewriting command-line invocations into a Python program, consider whether a declarative approach in the Cloud provider is the better investment, leading us to the following section.
+
+---
+
+## Reason #6: The End of the Line Is Not Scripted
+
+One can still make the case that Python, as a general-purpose programming language, is a better platform for future expansion.
+
+As mentioned in the introduction, code size correlates with complexity. So when problems get big, surely Python’s richer instruction set and library ecosystem should handily leave Bash scripting in the dust.
+
+There are two obstacles to that argument.
+
+### Mega CLIs
+
+I mentioned the vendor-backed CLIs in the previous section. Operations teams are the central constituency of Cloud providers, demanding that every bit of function be wrapped with command-line interfaces. Those teams require those CLIs for two reasons:
+
+1. Bash is everywhere, so automation scripts written in Bash will run anywhere.
+2. Writing shell scripts is more accessible than writing a new application to interact with the equivalent API.
+
+The command-line interfaces for Cloud providers have dozens of commands and hundreds of sub-commands.
+
+Add open-source juggernauts like “[awk](https://tldp.org/LDP/abs/html/awk.html),” “[curl](https://curl.se/),” and “[openssl](https://www.openssl.org/),” mix in relative younglings like “[jq](https://stedolan.github.io/jq/)” and “[yq](https://mikefarah.gitbook.io/yq/),” and the operational range of Bash scripting has expanded considerably since its early days. If you run operations in Kubernetes land, add “[helm](https://helm.sh/)” and “[kubectl](https://kubernetes.io/docs/reference/kubectl/)” to that list.
+
+Thanks to those mega CLIs, that rule-of-thumb ceiling of 50 lines before considering a more general programming language is considerably higher.
+
+### Operations Frameworks
+
+> “Ugh! Still, once things get complicated enough, Python is more flexible and will be more productive than Bash.”
+
+That could be true in a world where operations did not evolve toward system management platforms:
+
+* Long stretches of scripted commands to run against sets of VMs? Use something like **Ansible.**
+* A long list of infrastructure resources that should be created in the infrastructure? Use something like **Terraform** or a provider-specific equivalent, such as AWS’s Cloud Formation or Azure’s Resource Manager.
+* How about a list of configuration resources to be managed in a Kubernetes cluster? Use something like **ArgoCD** or **FluxCD**.
+
+Making the equation even less favorable to Python, all these frameworks typically require scripting to smooth out the rough spots of their abstraction design.
+
+For example, to use my Kubernetes GitOps framework of choice, Argo CD, any imperative block of code that cannot be expressed as a Kubernetes resource must be pushed into a “[resource hook](https://argo-cd.readthedocs.io/en/stable/user-guide/resource_hooks/).” These hooks are Kubernetes jobs that run before, during, or after resources are applied to a cluster.
+
+As a Kubernetes job, resource hooks are basically commands executed on containers.
+
+1. Bash image size (docker.io/library/bash:5): **12.5Mb**
+2. Python image size (docker.io/library/python:alpine): **59.6Mb**
+
+And if you are staying with a more restricted set of the Bourne Shell scripting syntax, you can even use the [alpine image](https://hub.docker.com/_/alpine) as-is, with a slim footprint of 7.75Mb.
+
+And when the scripted tasks are simple, we can observe similar multiples of CPU and memory favoring a Bash ecosystem tuned for five decades of minimum resource utilization as a hard requirement.
+
+---
+
+## Parting Thoughts
+
+In objective terms, regarding _task automation for Cloud operations_, it is hard to argue against Bash. It is more expressive in dealing with utilities and filesystems, it is omnipresent, and it is leaner.
+
+It is also the primary language of tutorials and forums.
+
+While Python offers various ways of invoking Bash-like scripting, whether with [abstractions](https://docs.python.org/3/library/subprocess.html) or [script wrappers](https://pypi.org/project/bash/), or through all [manners of ingenuity](https://levelup.gitconnected.com/bash-vs-python-for-modern-shell-scripting-c1d3d79c3622), there is always the nagging question of whether the result is better. Is it more readable, more maintainable, more reliable, more…anything?
+
+Those questions are often answered with the promise of a better platform for dealing with future complexity. But in systems automation, at least historically, whenever complexity got out of hand, the industry answered with frameworks that allowed scripts to remain short, where we all should concede to Bash’s excellence.
+
+When all answers go against reason and reasons, one must stop and ask, _“But why?”._
+
+I may not live down taking this big swing at Python, but I don’t think Bash is ready to retire just yet.
+
+---
