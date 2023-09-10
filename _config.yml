@@ -1,0 +1,12 @@
+remote_theme: pages-themes/slate@v0.2.0
+plugins:
+- jekyll-remote-theme
+
+title: Denilson Nastacio
+description: Technical Articles and Essays
+
+google_analytics: G-EXYENKVV08
+
+github:
+#  zip_url: http://example.com/download.zip
+  another_url: https://nastacio.github.io/blogs

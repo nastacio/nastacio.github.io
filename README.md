@@ -1,56 +1,27 @@
-# Technical articles
+# About me
 
-## [github.com/nastacio/blogs](https://github.com/nastacio/blogs)
+![Sticky figure sitting at a desk, with back turned to reader's perspective. City sky outline in the distant background.](images/main.png)
 
-| Title | Date  |
-| - | - |
-| [The Artificial Empathy of Generative AI](artificial-empathy/README.md) | 2023-04 |
-| [When You Should Use Bash Over Python](bash/README.md) | 2023-03 |
-| [The Educator Who Taught the World](montessori/README.md) | 2023-03 |
-| [Rewriting the Most Critical System in the World](rewriting-education/README.md) | 2023-02 |
-| [What Is the Hardest Thing in Software Development?](naming-reality/README.md) | 2022-12 |
-| [Using Let’s Encrypt Certificates on Managed Clusters With Openshift Hive](hive-trusted-api-endpoint/README.md) | 2022-12 |
-| [Multi-cloud DNS Delegation Between Gcp and AWS](gcp-dns-aws-route53/README.md) | 2022-11 |
-| [Running Knative Services on AWS Spot Instances](knative-interruptible/README.md) | 2022-10 |
+Hi, my name is Denilson Nastacio, and I work in tech for big co (IBM.) You can find my professional information on [Linked In](https://www.linkedin.com/in/nastacio/), but here are some highlights.
+
+I started in 1997, and I had fantastic opportunities to work on fun things, such as locating hardware in a data center using air temperature (ask me about it) and training an Artificial Intelligence to find treatments for cancer patients (ask me about it too!)
+
+For a few years, I was tasked with designing the operations engineering practice for a global service hosting over 100K applications. Eventually, I switched projects, and started writing more often.
 
 ---
 
-## [sourcepatch.blogspot.com](https://sourcepatch.blogspot.com)
+## My writing
 
-(only the most recent subset listed here)
+My writing is a mixture of seemingly distinct topics: technical deep dives like ["The art and science of probing a Kubernetes container"](https://sourcepatch.blogspot.com/2022/01/kubernetes-probes-part-3-promql.html) and examining the influences of philosophy and psychology in software development in posts like ["What is the hardest thing in software development?"](naming-reality) and ["Rewriting the most critical system in the world."](rewriting-education)
 
-| Title | Date |
-| - | - |
-| [The art and science of probing a Kubernetes container, part 3: Metrics and PromQL queries.](https://sourcepatch.blogspot.com/2022/01/kubernetes-probes-part-3-promql.html) | 2022-01 |
-| [The art and science of probing a Kubernetes container, part 2: kubectl queries](https://sourcepatch.blogspot.com/2021/12/6-kubectl-queries-for-validating.html) | 2021-12 |
-| [The art and science of probing a Kubernetes container](https://sourcepatch.blogspot.com/2021/12/the-art-and-science-of-probing.html) | 2021-12 |
-| [Should (only) developers be on-call?](https://sourcepatch.blogspot.com/2021/09/asking-wrong-question-should-developers.html) | 2021-09 |
-| [AI Ops Series - Part 2: dealing with state machines and time](https://sourcepatch.blogspot.com/2021/05/ai-ops-series-part-2-dealing-with-state.html) | 2021-05 |
-| [AI Ops Series - Part 1: observability and continuous deployment](https://sourcepatch.blogspot.com/2021/04/ai-ops-series-part-1-observability-and.html) | 2021-04 |
-| [Configure Docker Desktop on Windows to run with Azure Active Directory](https://sourcepatch.blogspot.com/2019/11/mounting-volumes-when-using-docker.html) | 2019-11 |
-| [Bioinformatics was awesome, now back to the cloud, which is also awesome](https://sourcepatch.blogspot.com/2019/10/bioinformatics-was-awesome-now-back-to.html) | 2019-10 |
-| [Correlation between completion of clinical trials and conditions in the trials](https://sourcepatch.blogspot.com/2019/04/correlation-between-completion-of.html) | 2019-04 |
-| [Clinical Trials visualization with Cognos Dashboard Embedded in the IBM Cloud](https://sourcepatch.blogspot.com/2018/09/clinical-trials-visualization-with.html) | 2018-09 |
-| [Applying machine learning to the study of clinical trial data](https://sourcepatch.blogspot.com/2018/03/applying-machine-learning-on-study-of.html) | 2018-03 |
-| [Making sense of clinical trials through visualizations](https://sourcepatch.blogspot.com/2017/02/making-sense-of-clinical-trials-through.html) | 2017-02 |
-| [Serverless, NoOps, and Silver Bullets](https://sourcepatch.blogspot.com/2016/05/serverless-no-ops-and-silver-bullets.html) | 2016-05 |
-| [Using iptables to route DNS searches away from Google DNS rate-limiting](https://sourcepatch.blogspot.com/2014/07/using-iptables-to-route-dns-searches.html) | 2014-07 |
+You can follow me on [Medium.com](https://dnastacio.medium.com) or read my archive of stories [here](blogs.html).
 
 ---
 
-## [rtpscrolls.com](https://rtpscrolls.com)
+## My drawing
 
-(only the most recent subset listed here)
+People often ask me about the illustrations in my stories, and yes, they are personally drawn with pen or pencil (I also make my best effort to create "alt text" descriptions for each of them.)
 
-| Title | Date |
-| - | - |
-| [Bluemix Cloud Foundry: 10 Lessons Learned](http://www.rtpscrolls.com/2017/10/bluemix-cloud-foundry-10-lessons-learned.html) | 2017-10 |
-| [Recognition and meaning, by design](http://www.rtpscrolls.com/2017/08/engineered-recognition.html) | 2017-08 |
-| [Serverless, NoOps, and Silver Bullets](http://www.rtpscrolls.com/2016/05/serverless-noops-and-silver-bullets.html) | 2016-05 |
-| [DevOps: On walls and trenches](http://www.rtpscrolls.com/2015/11/devops-on-walls-and-trenches.html) | 2015-11 |
-| [What is your problem? - Part 3: Descriptions](http://www.rtpscrolls.com/2014/01/what-is-your-problem-part-3.html) | 2014-01 |
-| [What is your problem? – Part 2: Real versus imaginary problems](http://www.rtpscrolls.com/2013/11/what-is-your-problem-part-2.html) | 2013-11 |
-| [Critical thinking and cows in the field](http://www.rtpscrolls.com/2013/10/critical-thinking-and-cows-in-field.html) | 2013-10 |
-| [What is your problem? - Part 1: Know your facts](http://www.rtpscrolls.com/2012/10/what-is-your-problem-part-1-of-2.html) | 2012-10 |
+![Kid standing on other side of river, with a scenic background](rewriting-education/images/mountain-you.png)
 
 ---

@@ -76,13 +76,6 @@ The serving component manages the number of replicas for that container to meet 
 
 ## Environment configuration
 
-- [Choose the AWS region for the cluster](#choose-the-aws-region-for-the-cluster)
-- [Create an OCP 4.11 cluster](#create-an-ocp-411-cluster)
-- [Create the OCP MachineSet using spot instances](#create-the-ocp-machineset-using-spot-instances)
-- [Create cluster and machine autoscalers](#create-cluster-and-machine-autoscalers)
-- [Install Knative on the cluster](#install-knative-on-the-cluster)
-- [Enable Knative feature flags](#enable-knative-feature-flags)
-
 **Note**: This section requires you to apply many resources mentioned in the article to the cluster. You can apply them from a terminal using a [Heredoc constructs](https://linuxize.com/post/bash-heredoc/) (see below) or use the OpenShift [Import YAML](http://openshift.github.io/openshift-origin-design/designs/administrator/future-openshift/import-yaml/) button.
 
   ```sh
@@ -300,6 +293,8 @@ The second step is to create [OCP machine autoscalers](https://docs.openshift.co
 
 You can create the resources using a [code block like the one below](scripts/create-machine-autoscalers.sh), which iterates through the names of the machine sets created in the previous section. It establishes the respective autoscaler for the machine set, with a range of 0 to 3 machines:
 
+{% raw %}
+
 ```sh
 kubectl get MachineSet \
     -n openshift-machine-api \
@@ -326,6 +321,8 @@ spec:
 EOF
 done
 ```
+
+{% endraw %}
 
 Since the minimum number of replicas was set to zero, and given the taint in the interruptible machine sets preventing other workloads from running in those nodes, the cluster should eventually delete all machines associated with the new machine sets until there are pods scheduled to run on those nodes.
 
