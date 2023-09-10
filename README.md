@@ -4,6 +4,7 @@
 
 | Title | Date  |
 | - | - |
+| [The Artificial Empathy of Generative AI](artificial-empathy/README.md) | 2023-04 |
 | [When You Should Use Bash Over Python](bash/README.md) | 2023-03 |
 | [The Educator Who Taught the World](montessori/README.md) | 2023-03 |
 | [Rewriting the Most Critical System in the World](rewriting-education/README.md) | 2023-02 |
