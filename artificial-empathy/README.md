@@ -1,7 +1,6 @@
 # The Artificial Empathy of Generative AI
 
 _When Imitation Is the Sincerest Form Of Failure_
------------------------------------------------
 
 ![Sticky figure style drawing with human wearing a hat standing in front of a squarish robot wearing a similar style of hat, ostensibly trying — and failing — to look like the human."](images/main.png)
 
