@@ -4,7 +4,7 @@
 
 ![Sticky figure character sits in front of desk, staring at a blank computer screen. The desk oversees an expansive view of a busy city landscape.](./images/main.png)
 
-Software development is a continuous process of creating abstract new worlds, a topic I covered in “[What is the hardest thing in software development?”](/real-to-virtual-b2bacd2423c9)
+Software development is a continuous process of creating abstract new worlds, a topic I covered in [“What is the hardest thing in software development?”](https://dnastacio.medium.com/real-to-virtual-b2bacd2423c9)
 
 With so much of that process’ success hinging on the ability to construct knowledge from sensory information — learn — and share that knowledge with others — educate — it is surprising that we rarely stop to reflect on our ability to do those things well.
 

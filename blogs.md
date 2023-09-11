@@ -2,6 +2,8 @@
 
 | Title | Date  |
 | - | - |
+| [Return to the Office Without Returning to The Past](return-to-office/README.md) | 2023-09 |
+| [On Technical Debt, Margin Calls, and Ponzi Schemes](debt/README.md) | 2023-07 |
 | [Stories That Can Heal The World](life-death-stories/README.md) | 2023-05 |
 | [The Artificial Empathy of Generative AI](artificial-empathy/README.md) | 2023-04 |
 | [When You Should Use Bash Over Python](bash/README.md) | 2023-03 |

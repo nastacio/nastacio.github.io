@@ -1,9 +1,6 @@
+# What is the hardest thing in software development?
 
-What is the hardest thing in software development?
-==================================================
-
-Naming, but not in the way you think
--------------------------------------
+_Naming, but not in the way you think_
 
 ![An iceberg floating in the ocean. The sea has a label of "Reality". The submerged portion of the iceberg has a label of "Knowledge". The portion of the iceberg above the waterline has a label of "Names". A sticky figure sits on a tiny canoe to the right of the iceberg, representing what could be a software developer.](images/Naming-figure-iceberg-composite.png "Our knowledge represents a minute portion of reality. Names are the visible portion of that knowledge.
 ")
@@ -34,8 +31,9 @@ Confusing names make it difficult to share the knowledge beneath those names. Wi
 
 This topic gets philosophical before it gets technical.
 
-The semantics of reality
-========================
+---
+
+## The semantics of reality
 
 Before understanding why naming is hard (and crucial), we must understand how our brains “translate” the world around us into knowledge.
 
@@ -73,8 +71,9 @@ These differences introduce two fundamental challenges in dealing with reality, 
 
 We are more or less familiar with differences in depth. We are not as adapted to differences in perspective.
 
-A virtual world where everything is new
-=======================================
+---
+
+## A virtual world where everything is new
 
 At this point, you can tell the hard part is not the final act of naming something.
 
@@ -86,7 +85,7 @@ But what happens when someone’s reality does not obey the rules of space, matt
 
 That is the software conundrum, emphasis on “soft” (virtual) as opposed to “hard” (concrete.) Software developers don’t simply assign names to entities in their world. _Often, they create those entities._
 
-![](images/Naming-figure-virtual-reality.png "A software developer may interpret reality in more or less obvious ways to another observer. Some concepts may be simple and shared across different developers. Other concepts may require complex explanations and the formation of new semantic networks across the team before people can collaborate around it.")
+![Stick figure stands by whiteboard with schematic drawing of a system architecture. One of the components is the face of animated character Galactus.](images/Naming-figure-virtual-reality.png "A software developer may interpret reality in more or less obvious ways to another observer. Some concepts may be simple and shared across different developers. Other concepts may require complex explanations and the formation of new semantic networks across the team before people can collaborate around it.")
 
 As such, software developers face naming decisions more frequently than people in other professions.
 
@@ -100,8 +99,9 @@ Software developers? They get that opportunity dozens, possibly hundreds of time
 
 The opportunities come from dealing with a medium that can represent thoughts and concepts in a program. Those representations must be rigidly and unequivocally referenceable by other programs.
 
-Knowledge transfer, from theory to practice
-===========================================
+---
+
+## Knowledge transfer, from theory to practice
 
 Once everything new is named, it is time to introduce those new worlds to the rest of the development team.
 
@@ -124,8 +124,9 @@ To be clear, a live session is a great cognitive tool. “Students” can intera
 
 On the other hand, training delivery largely depends on the instructor’s experience. A personal delivery leads to inconsistent results across sessions. Individualized delivery also scales poorly and marginalizes colleagues outside the boundaries of social networks, geographies, and time zones.
 
-Metaphors: Beware the “off-the-shelf” semantic networks
-========================================================
+---
+
+## Metaphors: Beware the “off-the-shelf” semantic networks
 
 Different people form semantic networks in different ways. In software development, that is especially true of situations where you deal with abstract concepts fitting multiple possible categories.
 
@@ -137,8 +138,7 @@ An example of a simple metaphor is using a “trash” icon to delete files from
 
 There are (at least) two problems with using metaphors, though.
 
-Metaphor issue #1: Well-known by whom?
---------------------------------------
+### Metaphor issue #1: Well-known by whom?
 
 The first problem is that a familiar concept is not necessarily universal.
 
@@ -152,8 +152,7 @@ On a side note, the story also shows the incredible power of shared context, whe
 
 _Sokath, his eyes uncovered!_
 
-Metaphor issue #2: Depth and perspective
------------------------------------------
+### Metaphor issue #2: Depth and perspective
 
 Once again, we face our semantic network villains.
 
@@ -167,8 +166,9 @@ There is also evidence from learning theory that [transferring knowledge across 
 >
 > In fact, he held an experiment where he had the subjects estimate the size of a specific shape and then he would switch the shape. He found that the prior information did not help the subjects; instead it impeded their learning.\[17\]
 
-Abstractions. It is abstractions (almost) all the way down
-===========================================================
+---
+
+## Abstractions. It is abstractions (almost) all the way down
 
 Think of abstractions as grouping entire semantic networks into fewer entities in a new semantic network.
 
@@ -194,8 +194,9 @@ And because we need to reason and communicate efficiently about the solution to 
 
 Software developers, or at least software architects, would do well to skim the concepts of [Cognitive Load](https://en.wikipedia.org/wiki/Cognitive_load) — The topic of cognitive load applied to software design is the subject of a future posting.
 
-From ubiquitous to unique
-=========================
+---
+
+## From ubiquitous to unique
 
 Semantic networks grow in number and size as we learn. They also grow like trees, with new concepts attached to existing ones. We can reorganize portions of semantic trees in our brains, but complete “rewrites” are not easy or common.
 
@@ -207,7 +208,7 @@ As a warm-up exercise in software development, let’s look at the narrow scope 
 
 Loop controls require naming index variables or enumerated elements. Those naming decisions are largely derivative and inconsequential. For example, when it comes to index variables, the default decision often follows the [historical pattern](https://news.ycombinator.com/item?id=1971507) of single-character names like “**i**,” “**j**,” and “**k**.”
 
-![](images/Naming-figure-cart-total.png "Two different developers with similar training and confronted with the same abstract definition of a simple task may arrive at solutions that look very similar. That agreement may dissipate when the same developers deal with higher-level abstractions.")
+![Side-by-side illustrations of software developers looking at a circle with the words "calculate checkout total" written in it. One developer is sitting at a desk, next to a callout of their screen with a different naming convention than the callout next to the other developer.](images/Naming-figure-cart-total.png "Two different developers with similar training and confronted with the same abstract definition of a simple task may arrive at solutions that look very similar. That agreement may dissipate when the same developers deal with higher-level abstractions.")
 
 Move past loop controls, and we are dealing with naming entities with a higher semantic purpose. At that point, we are probably trying to make the names fit within the purpose of the function containing the variables.
 
@@ -231,8 +232,9 @@ I would add frequent cross-education and even pair programming as activities tha
 
 The topic of differing semantic networks takes us to the next section.
 
-Rewriting reality through code
-==============================
+---
+
+## Rewriting reality through code
 
 Redoing someone’s work is a uniquely common practice in the software industry.
 
@@ -252,7 +254,7 @@ In a few more words, pre-existing code in a system is not a static artifact. It 
 
 Rewriting code is not a pointless exercise in rebuilding what is already in a code repository. It is an exercise in creating an equilibrium between what the developer knows and the written representation of that knowledge. That alignment enables the developer to work with the code base more productively. The rewritten code base _is a byproduct of a learning activity_.
 
-![](images/Naming-figure-rewrite.png "If the source code does not match how the developer thinks about what the code should do, many developers may find it easier to rewrite the code than rebuild their mental structures and reasoning about the problem being solved.")
+![Sticky figure sitting at a desk looking at computer monitor. A callout from the image screen shows a source code representation of a component diagram and the developer deleting the existing code to refactor it in a different way.](images/Naming-figure-rewrite.png "If the source code does not match how the developer thinks about what the code should do, many developers may find it easier to rewrite the code than rebuild their mental structures and reasoning about the problem being solved.")
 
 Note that I explicitly address a scenario where the codebase is transferred from one developer to another. [Code ownership](https://wiki.c2.com/?CodeOwnership), whether following an individual or a shared model, is a topic for a future posting.
 
@@ -262,8 +264,9 @@ Ego may play a part — naming things is akin to leaving a small mark in the wor
 
 New realities beget new names.
 
-Conclusion
-==========
+---
+
+## Conclusion
 
 Naming (something) in software development is the culmination of a complex process of creating abstract worlds.
 
@@ -277,8 +280,9 @@ Unprecedented technological progress demands ever-increasing abstraction layers 
 
 Many of these challenges are intrinsic to the young age of our profession, but there are various concepts we can borrow from other fields to help us explain, reconcile, and solve those problems.
 
-References
-==========
+---
+
+## References
 
 * Metaphors We Compute By — [https://websites.umich.edu/~jlawler/meta4compute.html](https://websites.umich.edu/~jlawler/meta4compute.html)
 * What Are Abstractions in Software Engineering with Examples — [https://thevaluable.dev/abstraction-type-software-example/](https://thevaluable.dev/abstraction-type-software-example/)
@@ -286,3 +290,5 @@ References
 * Navigating through the Everyday World — A Cognitive Perspective by @DonnaRobertsPhD — [https://link.medium.com/T9SHda0mWvb](https://link.medium.com/T9SHda0mWvb)
 * You can handle complexity. So what? — [https://medium.com/@hayavuk/you-can-handle-complexity-so-what-41f0aca4d097](https://medium.com/@hayavuk/you-can-handle-complexity-so-what-41f0aca4d097)
 * Code Ownership — [https://medium.com/blacklane-engineering/code-ownership-177566d93378](https://medium.com/blacklane-engineering/code-ownership-177566d93378)
+
+---
