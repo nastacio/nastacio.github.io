@@ -34,7 +34,7 @@ What can be more challenging to navigate than improvised work arrangements impos
 
 None of this means returning to a point in space will bring back those years, but like a crashed system, it is only human to revisit the past, hoping to find a stable snapshot and restore what was lost.
 
-Speaking of my corner of the corporate world, in software development, we adapted better than most to the partial lockdowns, not the least because we normally excel in that [twilight between the virtual and the real](https://dnastacio.medium.com/real-to-virtual-b2bacd2423c9).
+Speaking from my corner of the corporate world, in software development, we adapted better than most to the partial lockdowns, not the least because we normally excel in that [twilight between the virtual and the real](https://dnastacio.medium.com/real-to-virtual-b2bacd2423c9).
 
 It was still improvised, and it was still a pandemic.
 
