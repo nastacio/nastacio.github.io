@@ -1,0 +1,31 @@
+main:
+  - title: "Essays"
+    url: /essays/
+  - title: "Tutorials"
+    url: /tutorials/
+  - title: "Archive"
+    url: /year-archive/
+  # - title: "Categories"
+  #   url: /categories/
+  - title: "Tags"
+    url: /tags/
+  # - title: "Pages"
+  #   url: /page-archive/
+  # - title: "Collections"
+  #   url: /collection-archive/
+  - title: "My Other Blogs"
+    url: /blogs/
+  - title: "About Me"
+    url: /about/
+
+docs:
+  - title: Getting Started
+    children:
+      - title: "Quick-Start Guide"
+        url: /docs/quick-start-guide/
+      - title: "Structure"
+        url: /docs/structure/
+      - title: "Installation"
+        url: /docs/installation/
+      - title: "Upgrading"
+        url: /docs/upgrading/
