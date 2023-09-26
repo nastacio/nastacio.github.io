@@ -1,6 +1,8 @@
 main:
   - title: "Essays"
     url: /essays/
+  - title: "Technical Notes"
+    url: /technotes/
   - title: "Tutorials"
     url: /tutorials/
   - title: "Archive"
