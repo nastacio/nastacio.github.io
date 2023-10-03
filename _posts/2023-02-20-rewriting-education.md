@@ -38,8 +38,6 @@ More insidiously, the lack of mental schemas in education is often paired with c
 
 As software developers, we are used to continuously improving systems and fixing minor defects in the next system iteration. But when the issues affect the building pipeline itself, it is time to stop everything and fix the problem.
 
----
-
 ## The system of genesis
 
 Before fixing a system, we must first understand its rules and how it works.
@@ -70,8 +68,7 @@ Those influences manifest at the surface of our interactions but originate at th
 
 It is time to start some of that rewriting mentioned in the title of this story.
 
-Two doctrines to leave behind…
-------------------------------
+### Two doctrines to leave behind…
 
 As a system, school is a mass-production pipeline spanning 10 to 14 years of education, extending by another 3 to 6 years for a college degree. It is a structured environment bringing teachers and students into classrooms on a fixed calendar schedule. As with any system, it breaks down into a complex combination of parts, participants, and workflows.
 
@@ -123,8 +120,6 @@ When we hear our technical elders talk about communication skills, listening, co
 
 A good or bad experience today will spider through a web of relationships for multiple generations, leading us to the next section.
 
----
-
 ## System theory and the theories behind the system
 
 When learning and educating are integral parts of the profession, that professional field is an extension of the education system. We keep learning and educating in the same ways we observed for most of our lives at that point.
@@ -135,7 +130,7 @@ On the learning side, how often did we find ourselves waiting for information fr
 
 With the pipeline of educational theory (and methods) lagging to the point where we risk retiring before those improvements reach us, it is a good idea to take a stroll up the production line and maybe pick out some exciting building blocks that may be a decade or two away from reaching our current position.
 
-As we walk up that production line, we find theories in reverse chronological order, with the oldest ones first (the ones we are practicing now) and the earlier ones last (the ones we may never get to practice.)
+As we walk up that production line, we find theories in reverse chronological order, with the oldest ones first (the ones we are practicing now) and the recent ones last (the ones we may never get to practice.)
 
 There are [many learning theories](http://www.ibe.unesco.org/en/geqaf/annexes/technical-notes/most-influential-theories-learning), but we went through a system heavily based on “behaviorist” and “cognitive psychology” learning theories. These are the two most prominent learning theories, with “constructivism” rounding out a de-facto triad — chime in the comments section if you spot your school having used something outside these three.
 
@@ -157,7 +152,7 @@ I conclude with an acknowledgment of its corporate offshoot: [gamification](http
 
 ### Cognitive psychology
 
-Cognitive psychology started to make inroads into learning circles around the late 1950s. A generation of school teachers influenced by those theories would take a whole generation to reach classrooms.
+Cognitive psychology started to make inroads into learning circles around the late 1950s. The class of school teachers influenced by those theories would take a generation to reach classrooms.
 
 With cognitive psychology, educators start discussing subjects such as perception, language, metacognition, and knowledge organization.
 
@@ -169,8 +164,7 @@ We start to examine and map out the awareness of thought processes and how they 
 
 More than [fighting monsters](https://en.wikipedia.org/wiki/Little_Albert_experiment), education leaders started to believe they could win.
 
-Constructivism
---------------
+### Constructivism
 
 Around the same time the Prussian education method spread worldwide, [Dr. Maria Montessori’s](https://en.wikipedia.org/wiki/Maria_Montessori) work showed that children left to their own devices with limited guidance could outperform others in public school.
 
@@ -188,9 +182,9 @@ Now, fast-forward past formal education, and consider a constructivist approach 
 
 Here are the core concepts behind constructivism:
 
-* Our minds are in perpetual pursuit of [**_cognitive equilibrium_**](https://www.britannica.com/science/cognitive-equilibrium):
-* We **_assimilate_** the information from our environment according to our mental schemas. That is how we perceive the world.
-* We **_accommodate_** information if we cannot assimilate it by modifying our mental schemas. That is how we learn.
+- Our minds are in perpetual pursuit of [**_cognitive equilibrium_**](https://www.britannica.com/science/cognitive-equilibrium):
+- We **_assimilate_** the information from our environment according to our mental schemas. That is how we perceive the world.
+- We **_accommodate_** information if we cannot assimilate it by modifying our mental schemas. That is how we learn.
 
 ![Circular diagram with three nodes representing the phases of an equilibration cycle in constructivist learning theory. Next to a node labeled "equilibrium", there are a few people with the sign of checkmarks next to them. Next to a node labeled "assimilate", some of the checkmarks are replaced by question marks. Next to a node labeled "accommodate", all checkmarks and question marks are replaced by light-bulb signs.](/assets/images/rewriting-education/constructivist-cycle.png)
 
@@ -198,7 +192,7 @@ That learning cycle may differ for software development because we often aim to 
 
 We can also see clear signs of constructivist learning in software development approaches like [throwaway prototyping](https://en.wikipedia.org/wiki/Software_prototyping#Throwaway_prototyping) or [iterative development](https://www.techtarget.com/searchsoftwarequality/definition/iterative-development). Each iteration is an expression of the assimilation phase, and we can only form the next set of improved mental schemas (accommodation) once we interact with the current version of the product.
 
-Without a viable path in learning theory, the monsters pushed on to the next stage of the system, leading us to the following section.
+Without a viable path in learning theory, the monsters drifted to the next stage of the system, leading us to the following section.
 
 ## Going to production, from theory to practice
 

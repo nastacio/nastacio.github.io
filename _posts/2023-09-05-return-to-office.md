@@ -104,7 +104,7 @@ From the sidelines, we also have to contend with a growing mental health crisis,
 
 I am threading a needle of [bothsideism](https://en.wiktionary.org/wiki/bothsidesism) here, but that is the whole point.
 
-This debate will not be won with a decisive data-driven knockout, mainly because the little data we have reveals a more nuanced picture, with some segments of the office population reporting improved mental health post-RTO.
+This debate will not be won with a decisive data-driven knockout, mainly because the little data we have reveals a more nuanced picture, with [some segments of the office population reporting improved mental health post-RTO](https://www.mckinsey.com/industries/healthcare/our-insights/returning-to-work-keys-to-a-psychologically-safer-workplace).
 
 So, the current point in time is inconclusive, but as the following section shows, those demographics are pointing in a clear direction.
 
