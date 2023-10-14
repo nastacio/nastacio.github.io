@@ -9,11 +9,11 @@ header:
 excerpt: >
   A personal portfolio of technical tutorials and essays on career, technology, and productivity.<br />
 feature_row:
-  - image_path: assets/images/return-to-office/traffic.png
-    alt: "Traffic jam"
+  - image_path: /assets/images/technical-debt/technical-cdo.png
+    alt: "Customer admiring a beautiful landscape image, which is actually a wall-sized painting being propped up by two people struggling to keep it in place."
     title: "Featured Story"
-    excerpt: "Thoughts on returning to the office."
-    url: "/essay/return-to-office/"
+    excerpt: "New Financial Metaphors and Debt Management Lessons for Modern Software Development"
+    url: "/essay/technical-debt/"
     btn_class: "btn--primary"
     btn_label: "Read"
   - image_path: /assets/images/artificial-empathy/main.png
