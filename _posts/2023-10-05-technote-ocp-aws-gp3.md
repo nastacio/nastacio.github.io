@@ -1,5 +1,5 @@
 ---
-title: Using gp3 root volumes for OpenShift nodes on AWS
+title: Using gp3 Root Volumes for OpenShift Nodes on AWS
 excerpt: Avoid paying for expensive IOPS capacity reservation you may not need
 category:
   - technote
