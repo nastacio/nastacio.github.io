@@ -35,7 +35,7 @@ The straightforward way of enforcing that requirement is to sign the OpenShift A
 The challenge for using trusted certificates on managed clusters is two-fold:
 
 1. Currently, OpenShift Hive does not expose APIs to sign (or apply signed) certificates for managed clusters
-1. OpenShift Hibe is also a client to the managed clusters it creates, as it continuously interacts with the clusters to assess their health and perform management functions (such as the hibernation task mentioned earlier.)
+1. OpenShift Hive is also a client to the managed clusters it creates, as it continuously interacts with the clusters to assess their health and perform management functions (such as the hibernation task mentioned earlier.)
 
 Once you sign the API endpoint for the managed cluster, OpenShift Hive reports internal errors about not trusting that cluster's API endpoint, preventing it from managing the cluster.
 
@@ -46,7 +46,7 @@ Once you sign the API endpoint for the managed cluster, OpenShift Hive reports i
 The solution (credit to [Andrew Butcher](https://github.com/abutcher)) is to inform OpenShift Hive about the signing authority for the managed cluster, which can take place in two different ways:
 
 1. If the signing authority is shared across all (or many clusters,) modify the CA (certificate authority) database for all clusters in the Hive configuration.
-1. Modify the CA database for the individual managed cluster.
+1. Modify the CA database for the individual managed cluster in the Hive namespace for that cluster.
 
 This article explores that second approach since there is no guarantee that a single [Let's Encrypt](https://letsencrypt.org/) intermediary signer is the same across multiple clusters. If you want to explore that configuration for other purposes (for example, if your organization owns the signing certificate,) then you must use the [`set-additional-ca.sh` script](https://github.com/openshift/hive/blob/master/hack/set-additional-ca.sh) to _replace_ the current CA database (if any) with a new one.
 
