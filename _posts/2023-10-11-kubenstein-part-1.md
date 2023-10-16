@@ -98,7 +98,7 @@ The prompt proceeds to clarify what should happen once the AI encounters a probl
 >
 > - Once you complete giving me commands for the checklist "cluster health," we should start troubleshooting the list named "error list."
 
-You can read an [**example of an entire assessment session here**](https://github.com/nastacio/kubenstein/blob/v1.0.0/prompts/troubleshoot-assess.txt).
+You can read an [**example of an entire assessment session here**](https://gist.github.com/nastacio/42a25138413f9a2d61867ebe19b6b354).
 
 ![Frankenstein monster sitting at a desk in front of a laptop and staring at the screen.](/assets/images/kubenstein/kubenstein-main.png)
 
