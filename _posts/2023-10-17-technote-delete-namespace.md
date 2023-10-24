@@ -33,7 +33,7 @@ Ideally, it would be best to try reinstalling the missing component responsible 
 
 Assuming you have tried everything and your next stage of despair is to delete the whole cluster, you can use this workaround as a _last resort_, considering it may cause resource leaks in the infrastructure.
 
-The following shell block sequentially iterates through all resources in a target namespace. It forcefully empties the `metadata.finalizers` block, allowing the cluster to delete the resource without waiting on anything else.
+The following shell block sequentially iterates through all resources in a target namespace. It attempts to delete each namespace-scoped resources it finds, waiting for a few seconds, and then forcefully empties the resource's `metadata.finalizers` block, allowing the cluster to delete the resource without waiting on anything else.
 
 Once all resources holding up the namespace are gone, then the namespace will disappear from the cluster:
 
@@ -47,8 +47,8 @@ do
         if [ -z "${resource}" ]; then
             continue
         fi
-        echo "Deleting ${resource}"
-        kubectl patch "${resource}" -n "${ns}" \
+        kubectl delete "${resource}" -n "${ns}" --timeout=10s \
+        || kubectl patch "${resource}" -n "${ns}" \
             --type=merge \
             --patch '{"metadata":{"finalizers":[]}}'
     done <<< "$(kubectl get "${resource_type}" -n "${ns}" -o name  | sort)"
