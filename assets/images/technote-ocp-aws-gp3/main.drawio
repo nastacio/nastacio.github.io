@@ -1,0 +1,159 @@
+<mxfile host="65bd71144e">
+    <diagram id="1W20DNnwnF3v3cXbuxJJ" name="Page-1">
+        <mxGraphModel dx="738" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="VPC" style="sketch=0;outlineConnect=0;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_vpc;verticalAlign=top;align=left;spacingLeft=30;dashed=0;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="40" width="600" height="550" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="3" target="4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="master 0" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ec2;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="90" width="45" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="root volume&lt;br&gt;(io1)" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.volume;fillColor=#E05243;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="97" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="8" target="9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="master 1" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ec2;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="250" width="45" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="root volume&lt;br&gt;(io1)" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.volume;fillColor=#E05243;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="257" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="11" target="12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="master 2" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ec2;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="420" width="45" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="root volume&lt;br&gt;(io1)" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.volume;fillColor=#E05243;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="427" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="14" target="15">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="380" y="170" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="36" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="14" target="26">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" style="edgeStyle=none;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="14" target="28">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="worker 0" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ec2;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="90" width="45" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="root volume&lt;br&gt;(io1)" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.volume;fillColor=#E05243;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="347.5" y="200" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="a" style="edgeStyle=none;html=1;" edge="1" parent="1" source="20" target="21">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="20" target="32">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" style="edgeStyle=none;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="20" target="34">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="worker n" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ec2;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="374" width="45" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="root volume&lt;br&gt;(io1)" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.volume;fillColor=#E05243;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="347.5" y="474" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="Application&lt;br&gt;Volume (gp3)" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.volume;fillColor=#E05243;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="60" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Application&lt;br&gt;Volume (gp3)" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.volume;fillColor=#E05243;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="160" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="Application&lt;br&gt;Volume (gp3)" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.volume;fillColor=#E05243;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="370" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="Application&lt;br&gt;Volume (gp3)" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.volume;fillColor=#E05243;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="474" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="207.5" y="324" width="55" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="" style="image;html=1;image=img/lib/clip_art/finance/Dollar_128x128.png" vertex="1" parent="52">
+                    <mxGeometry width="35" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="" style="image;html=1;image=img/lib/clip_art/finance/Dollar_128x128.png" vertex="1" parent="52">
+                    <mxGeometry x="10" width="35" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="" style="image;html=1;image=img/lib/clip_art/finance/Dollar_128x128.png" vertex="1" parent="52">
+                    <mxGeometry x="20" width="35" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="337.5" y="540" width="55" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="" style="image;html=1;image=img/lib/clip_art/finance/Dollar_128x128.png" vertex="1" parent="56">
+                    <mxGeometry width="35" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="" style="image;html=1;image=img/lib/clip_art/finance/Dollar_128x128.png" vertex="1" parent="56">
+                    <mxGeometry x="10" width="35" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="" style="image;html=1;image=img/lib/clip_art/finance/Dollar_128x128.png" vertex="1" parent="56">
+                    <mxGeometry x="20" width="35" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="207.5" y="493" width="55" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="" style="image;html=1;image=img/lib/clip_art/finance/Dollar_128x128.png" vertex="1" parent="60">
+                    <mxGeometry width="35" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="" style="image;html=1;image=img/lib/clip_art/finance/Dollar_128x128.png" vertex="1" parent="60">
+                    <mxGeometry x="10" width="35" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="" style="image;html=1;image=img/lib/clip_art/finance/Dollar_128x128.png" vertex="1" parent="60">
+                    <mxGeometry x="20" y="1" width="35" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="340" y="266" width="55" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="" style="image;html=1;image=img/lib/clip_art/finance/Dollar_128x128.png" vertex="1" parent="64">
+                    <mxGeometry width="35" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="" style="image;html=1;image=img/lib/clip_art/finance/Dollar_128x128.png" vertex="1" parent="64">
+                    <mxGeometry x="10" width="35" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="" style="image;html=1;image=img/lib/clip_art/finance/Dollar_128x128.png" vertex="1" parent="64">
+                    <mxGeometry x="20" width="35" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="207.5" y="164.5" width="55" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" value="" style="image;html=1;image=img/lib/clip_art/finance/Dollar_128x128.png" vertex="1" parent="68">
+                    <mxGeometry width="35" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="" style="image;html=1;image=img/lib/clip_art/finance/Dollar_128x128.png" vertex="1" parent="68">
+                    <mxGeometry x="10" width="35" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="" style="image;html=1;image=img/lib/clip_art/finance/Dollar_128x128.png" vertex="1" parent="68">
+                    <mxGeometry x="20" y="1" width="35" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="" style="image;html=1;image=img/lib/clip_art/finance/Dollar_128x128.png" vertex="1" parent="1">
+                    <mxGeometry x="556" y="105" width="21" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="" style="image;html=1;image=img/lib/clip_art/finance/Dollar_128x128.png" vertex="1" parent="1">
+                    <mxGeometry x="556" y="200" width="21" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="" style="image;html=1;image=img/lib/clip_art/finance/Dollar_128x128.png" vertex="1" parent="1">
+                    <mxGeometry x="556" y="515" width="21" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="" style="image;html=1;image=img/lib/clip_art/finance/Dollar_128x128.png" vertex="1" parent="1">
+                    <mxGeometry x="556" y="411" width="21" height="21" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="..." style="rounded=0;whiteSpace=wrap;html=1;fontSize=32;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="305" y="291" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

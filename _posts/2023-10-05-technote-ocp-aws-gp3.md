@@ -1,5 +1,7 @@
 ---
 title: Using gp3 Root Volumes for OpenShift Nodes on AWS
+header:
+  teaser: /assets/images/technote-ocp-aws-gp3/main.svg
 excerpt: Avoid paying for expensive IOPS capacity reservation you may not need
 category:
   - technote
@@ -20,6 +22,10 @@ It was initially a bit of a mystery for two reasons:
 
 1. Clusters in that region were hibernated for most of the billing cycle, so there should be no data IO between EC2 and EBS instances.
 2. Our application storage uses the `gp3-csi` storage class for volumes.
+
+| ![Deployment diagram with AWS VPC containing the EC2 instances for OpenShift master and worker nodes. All nodes have an attached root volume of type "io1" and worker nodes have extra application volumes of type "gp3". The "io" volumes have multiple current signs next to them to indicate their higher cost.](/assets/images/technote-ocp-aws-gp3/main.svg) |
+|:--:|
+| Typical EC2 and EBS resources for an OpenShift cluster on AWS. |
 
 ## A Bit of Background
 
