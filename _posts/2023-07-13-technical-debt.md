@@ -191,7 +191,7 @@ From a software development perspective, a synthetic technical CDO is when deliv
 2. The development team depends on an internal process to complete the development of the feature as quickly as possible.
 3. The internal process is still at the prototype stage. The development team only realizes it once they start to use it frequently.
 
-For a more concrete example, let’s take a **continuous integration (CI) pipeline**, the part of the system responsible for merging new code into the code base and generating new versions of the system for deployment.
+For a more concrete example, let’s use a **continuous integration (CI) pipeline**, the part of the system responsible for merging new code into the code base and generating new versions of the system for deployment.
 
 For a project in the “Service” investments stage, that CI must be pretty sophisticated, with strategies for conflict resolution between code contributions, efficient caching of external package dependencies, various levels of validations, coordinated workflows with other parts of the system, around-the-clock support, and so on.
 
