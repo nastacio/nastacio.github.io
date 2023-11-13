@@ -9,11 +9,11 @@ header:
 excerpt: >
   A personal portfolio of technical tutorials and essays on career, technology, and productivity.<br />
 feature_row:
-  - image_path: /assets/images/technical-debt/technical-cdo.png
-    alt: "Customer admiring a beautiful landscape image, which is actually a wall-sized painting being propped up by two people struggling to keep it in place."
+  - image_path: /assets/images/problem-steps/main.png
+    alt: "Sticky figure style drawing of a person asking another person for help with a small puzzle."
     title: "Featured Story"
-    excerpt: "New Financial Metaphors and Debt Management Lessons for Modern Software Development"
-    url: "/essay/technical-debt/"
+    excerpt: "Three Steps to Solve All Your Problems in Tech"
+    url: "/essay/problem-steps/"
     btn_class: "btn--primary"
     btn_label: "Read"
   - image_path: /assets/images/artificial-empathy/main.png
