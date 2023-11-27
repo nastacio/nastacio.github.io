@@ -11,14 +11,14 @@ toc: false
 classes: wide
 ---
 
-[I started looking into OpenShift Container Platform 4.13](https://github.com/IBM/cloudpak-gitops/issues/288) and this summary of findings regarding OpenShift GitOps operator changes may interest a wider audiance.
+[I started looking into OpenShift Container Platform 4.13](https://github.com/IBM/cloudpak-gitops/issues/288) and this summary of findings regarding OpenShift GitOps operator changes may interest a wider audience.
 
 ## GitOps 1.5 (stable) is gone
 
 1. The `stable` channel for [OpenShift GitOps](https://docs.openshift.com/gitops/1.10/release_notes/gitops-release-notes.html) is [**REMOVED**](https://docs.openshift.com/gitops/1.10/release_notes/gitops-release-notes.html#GitOps-compatibility-support-matrix_gitops-release-notes) in OCP 4.13. Starting with OCP 4.13, you need to pick a specific channel  (`gitops-1.8` - `gitops-1.10` as of today) or `latest`.
 1. The removed `stable` channel maps to the `gitops-1.5` version of the operator in OCP 4.12. That version is not available in OCP 4.13, so you must upgrade to a more recent version of the operator in OCP 4.13. The minimum version is `gitops-1.8` (Even though OCP 4.13 currently allows the selection of operator versions 1.6 and 1.7, the [support matrix](https://docs.openshift.com/gitops/1.10/release_notes/gitops-release-notes.html#GitOps-compatibility-support-matrix_gitops-release-notes) says 1.8 is the minimum.)
 
-Interestingly enough, the [compatibility matrix in the OCP lifecycle page](https://access.redhat.com/support/policy/updates/openshift#gitops) differs ever so slightly from the compatibility matrix in the [OpenShift GitOps docs](https://docs.openshift.com/gitops/1.10/release_notes/gitops-release-notes.html#GitOps-compatibility-support-matrix_gitops-release-notes).
+Note that the [compatibility matrix in the OCP lifecycle page](https://access.redhat.com/support/policy/updates/openshift#gitops) differs ever so slightly from the compatibility matrix in the [OpenShift GitOps docs](https://docs.openshift.com/gitops/1.10/release_notes/gitops-release-notes.html#GitOps-compatibility-support-matrix_gitops-release-notes).
 
 For example, the OCP lifecycle page says GitOps 1.8 is incompatible with OCP 4.13, while the GitOps compatibility matrix says GitOps 1.8 works on OCP 4.13 (and it does.) In doubt, I prefer to trust the GitOps Docs.
 
