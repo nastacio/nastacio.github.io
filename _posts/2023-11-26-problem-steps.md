@@ -30,9 +30,7 @@ Asking for help is a familiar routine in a virtual world with an infinite supply
 - Ask for help too early, and you risk wasting someone else's time.
 - Ask for help too late, and you risk missing an important delivery date.
 
-The extremes are easy to recognize. On one end, we find half the team blocked all the time on seemingly trivial problems. On the opposite end of the spectrum, we find half the team demoralized, trying to tackle problems far beyond their abilities.
-
-It is in between that most organizations struggle to find balance.
+It is in between those extremes that most organizations struggle to find balance.
 
 Recognizing when to seek help and how to be ready to receive that help is the foundation of the help-seeking social contract, minimizing wasted time and maximizing collective progress.
 
@@ -116,7 +114,7 @@ Assuming you took the first step to heart and the solution to your problem is no
 3. Other people interested in the topic can follow the thread.
 4. Reframing the problem as something that can be shared with others can help you solve the problem
 
-If later you find the solution and the question is not too basic after all, then you can post the answer and other people hitting that problem in the future can find a ready-made solution. Everyone is collectively smarter for it, and you are now part of the crowd that gets everyone's back.
+If later you find the solution and the question is not too basic after all, then you can post the answer and other people hitting that problem in the future can find a ready-made solution.
 
 With this step, you are not flagging cars down the road; you are stopping to help others push their broken cars. And because this is a virtual world with little distinction between footprints and the body leaving them behind, you may be helping others without knowing.
 
@@ -124,7 +122,7 @@ Personally, I am somewhat spoiled by working in a large company with large Slack
 
 One can still be highly dependent on others to complete their work, but one doesn't need to be blocked waiting for help.
 
-If you worked through these first two steps and still haven't found a solution, it is time to ask someone to commit their time and resources to assist with the resolution. The following section shows how one can maximize their odds and minimize their losses (of time) by gathering a few facts ahead of time.
+If you worked through the first two steps and still haven't found a solution, it is time to ask someone to commit their time and resources to assist with the resolution. The following section shows how one can maximize their odds and minimize their losses (of time) by gathering a few facts ahead of time.
 
 ## Step #3: Gather Your Facts. It is Show (Me) Time
 
@@ -161,9 +159,9 @@ Following is a checklist I learned from a Critical Thinking coach many years ago
 - Is the problem specific to the phase in the product life cycle?
 - Is the symptom stable or worsening?
 
-Returning to the initial example in this article, when that anxious developer asked, _"My nginx server isn't working. What could it be?"_ Can you spot everything that is wrong with it? In other words, could you expand the description to a point where an expert without familiarity with your system would not have to ask clarifying questions?
+Returning to the initial example in this article, when that anxious developer asked, _"My nginx server isn't working. What could it be?", can you spot everything that is wrong with it? In other words, could you expand the description to a point where an expert without familiarity with your system would not have to ask clarifying questions?
 
-Going through that list, here are a few examples of questions I would be asking about the problem. Note that answering even only a few of those questions will force your brain into a different thinking pattern, describing the difference between what the system should do and what the system is doing. Don't be surprised if you find the solution before formulating the problem description.
+Going through the checklist, here are a few examples of questions I would be asking about the problem:
 
 - _"What is the expected behavior of the product?"_ - Obviously, we want the nginx server to be working, which entails ... what? An nginx server can serve diverse purposes, such as reverse proxying, load balancing, and caching. There is room for more precision here, but let's enter a state of "suspended curiosity" and assume the developer means every possible function available on a typical nginx configuration.
 

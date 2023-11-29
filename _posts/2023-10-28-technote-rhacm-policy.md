@@ -24,7 +24,7 @@ As long as the Argo instance is deployed at the cluster scope (the default out-o
 
 The OpenShift documentation has a [good primer on using an Argo CD instance to manage cluster-scoped resources](https://access.redhat.com/documentation/en-us/red_hat_openshift_gitops/1.10/html/declarative_cluster_configuration/configuring-an-openshift-cluster-by-deploying-an-application-with-cluster-configurations#doc-wrapper).
 
-There is one limitation when it comes to priming the cluster with secrets since [using sealed secrets in GitOps repo is a questionable concept](https://medium.com/better-programming/why-you-should-avoid-sealed-secrets-in-your-gitops-deployment-e50131d360dd). I like the idea of using [External Secrets operator](https://external-secrets.io/latest/). However, one still needs to set the master key for its secret store. That is where using a RHACM policy can help.
+There is one limitation when it comes to priming the cluster with secrets since [using sealed secrets in a GitOps repo is a questionable concept](https://medium.com/better-programming/why-you-should-avoid-sealed-secrets-in-your-gitops-deployment-e50131d360dd). I like the idea of using something like the [External Secrets operator](https://external-secrets.io/latest/). However, one still needs to set the master key for its secret store. That is where using a RHACM policy can help.
 
 ## RHACM Policies
 
@@ -32,7 +32,7 @@ There is one limitation when it comes to priming the cluster with secrets since 
 
 In oversimplified terms, a policy describes what a system administrator wants (or doesn't want) to have in a cluster.
 
-There are [different types of policies](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.8/html-single/governance/index#configuration-policy-sample-table) such as requiring that all pods in a namespace have memory requests or that all clusters have an nginx pod running on port 80 in its default namespace.
+There are [different types of policies](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.8/html-single/governance/index#configuration-policy-sample-table), such as requiring that all pods in a namespace have memory requests or that all clusters have an nginx pod running on port 80 in its default namespace.
 
 For the specific purpose of this technote, I wrote a Policy to copy over a master key from a Secret in the hub cluster to a Secret in a managed cluster.
 
