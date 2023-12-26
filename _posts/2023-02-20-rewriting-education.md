@@ -1,5 +1,5 @@
 ---
-title: Rewriting the most critical system in the world
+title: Rewriting the Most Critical System in the World
 header:
   teaser: /assets/images/rewriting-education/main.png
 category:
@@ -14,7 +14,7 @@ _But first, we need to go back to the source_
 
 ![Sticky figure character sits in front of desk, staring at a blank computer screen. The desk oversees an expansive view of a busy city landscape.](/assets/images/rewriting-education/main.png)
 
-Software development is a continuous process of creating abstract new worlds, a topic I covered in [“What is the hardest thing in software development?”](https://dnastacio.medium.com/real-to-virtual-b2bacd2423c9)
+Software development is a continuous process of creating abstract new worlds, a topic I covered in [“What Is the Hardest Thing in Software Development?”](https://dnastacio.medium.com/real-to-virtual-b2bacd2423c9)
 
 With so much of that process’ success hinging on the ability to construct knowledge from sensory information — learn — and share that knowledge with others — educate — it is surprising that we rarely stop to reflect on our ability to do those things well.
 

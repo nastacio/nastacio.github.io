@@ -49,7 +49,7 @@ That is not a romanticized view of literature. That is the science of how our br
 
 ---
 
-## A lifetime of stories
+## A Lifetime of Stories
 
 Fresh out of the womb, our first cry was a story to the world — a story about being scared and hungry. Our first public story. And if you are reading this, someone listened to it.
 
@@ -63,7 +63,7 @@ Exchanges like _“You have to read this book!”_ and _“Have you already watc
 
 For us, the arrow of life does not end in death, even as someone delivers our final stories in eulogy. As long as someone engages with our stories and learns something from them, we get to live another day.
 
-There is a sobering thought when we think of that arrow of life and stories. If nature compels us to tell our stories from the moment of birth, not telling those stories goes against nature, against life. Life also ends when we can no longer tell stories.
+There is a sobering moment when we think of that arrow of life and stories. If nature compels us to tell our stories from the moment of birth, not telling those stories goes against nature, against life. Life also ends when we can no longer tell stories.
 
 That flow of stories can slow down or stop altogether in so many ways, with an arc of its own, passing through censorship, isolation, lack of time, and, with enough barriers, ultimately end in the _inability_ to form stories that can engage the attention of others.
 
@@ -87,7 +87,7 @@ Luckily for us, we are great at it.
 
 ---
 
-## Master the stories
+## Master the Stories
 
 When Dr. Martin Luther King Jr., one the greatest storytellers of all time, graced his congregation with sermons like [_“I’ve Been to the Mountaintop,”_](https://www.americanrhetoric.com/speeches/mlkivebeentothemountaintop.htm) people stood up and marched through rain, hardship, and violence.
 
@@ -103,7 +103,7 @@ In **construction**, building structures requires plans, themselves a sequence o
 
 Do we even need to go into the relationship between **religion** and stories?
 
-In **law**, [storytelling binds the entire legal system](https://masterfile.biz/blog/lawyers-need-to-tell-a-story/), from the communication between clients and attorneys passing through jury deliberations and the final ruling. What is precedent if not someone else’s story applied to a different case?
+In **law**, [storytelling binds the entire legal system](https://masterfile.biz/blog/lawyers-need-to-tell-a-story/), from the communication between clients and attorneys passing through jury deliberations and the final ruling. What is legal precedent if not someone else’s story applied to a different case?
 
 In **software development**, business use cases, the foundational stones of any product development, are stories about users leading their lives. During development, once these use cases are broken into smaller ones, we call them “user stories.”
 
@@ -113,13 +113,13 @@ Also in **war**, military leaders know that [stories told to the public](https:/
 
 _“My personal story is not that important.”_
 
-Stories don’t need to be long; just look at Sean Hill’s Very Short Story Tweet-sized stories, with quick arcs that engage our imagination in ways one would not think possible.
+Stories don’t need to be long; just look at [Sean Hill’s Very Short Story Tweet-sized stories](https://twitter.com/VeryShortStory), with quick arcs that engage our imagination in ways one would not think possible.
 
 Stories don’t need to be fantastic; they need life behind them. For the right audience, they will propagate that life through words.
 
 ---
 
-## Master your story
+## Master Your Story
 
 Regular stories form life, but why don’t we want to tell them anymore? Why do we see students abdicating their still-developing storytelling gifts to chat boxes that can barely shuffle words into semi-coherence? Why do professionals hurt their careers by deferring their reasoning to machines that can’t tell facts from hallucinations?
 

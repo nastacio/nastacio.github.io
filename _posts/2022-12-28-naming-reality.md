@@ -1,5 +1,5 @@
 ---
-title: What is the hardest thing in software development?
+title: What Is the Hardest Thing in Software Development?
 header:
   teaser: /assets/images/naming-reality/Naming-figure-iceberg-composite.png
 category:

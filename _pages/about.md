@@ -17,7 +17,7 @@ For a few years, I was tasked with designing the operations engineering practice
 
 ## My writing
 
-My writing is a mixture of seemingly distinct topics: technical deep dives like ["The art and science of probing a Kubernetes container"](https://sourcepatch.blogspot.com/2022/01/kubernetes-probes-part-3-promql.html) and examining the influences of philosophy and psychology in software development in posts like ["What is the hardest thing in software development?"](naming-reality) and ["Rewriting the most critical system in the world."](rewriting-education)
+My writing is a mixture of seemingly distinct topics: technical deep dives like ["The art and science of probing a Kubernetes container"](https://sourcepatch.blogspot.com/2022/01/kubernetes-probes-part-3-promql.html) and examining the influences of philosophy and psychology in software development in posts like ["What Is the Hardest Thing in Software Development?"](naming-reality) and ["Rewriting the Most Critical System in the World."](rewriting-education)
 
 You can follow me on [Medium.com](https://dnastacio.medium.com) or read my archive of stories [here](blogs.html).
 
