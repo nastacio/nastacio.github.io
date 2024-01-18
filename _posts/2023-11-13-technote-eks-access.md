@@ -1,5 +1,5 @@
 ---
-title: Grant Access Non-AWS Account Users Access to an EKS Cluster
+title: Grant Access to EKS Cluster to Non-AWS Account Users
 excerpt: 
 category:
   - technote
