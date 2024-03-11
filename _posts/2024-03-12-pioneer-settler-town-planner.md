@@ -1,5 +1,5 @@
 ---
-title: Going Where You Are Needed in Tech
+title: The Map to Where You Are Needed in Tech
 category:
   - essay
 header:
@@ -13,7 +13,7 @@ toc: false
 published: true
 ---
 
-__Whether You Are Settling or Wandering, Always Bring a Map__
+__Understand Change. Predict The Future.__
 
 | ![AI Prompt: An explorer arriving at a densely populated big city dressed in the style of a software developer is seen from the perspective of someone standing behind the explorer. Use a drawing style.](/assets/images/pioneer-settler-town-planner/main.png "Pioneer arriving to the city, by DALL·E") |
 |:--:|
@@ -23,13 +23,13 @@ The inspiration for this story started with another one, by David Caudill, title
 
 In that story, David takes the reader through a worrisome progression where organizations lose sight of quality over time and, in the process, progressively devalue the importance of QA engineering roles.
 
-The shifting importance from one activity to another and the reduced status of established roles is a theme of its own. Abrupt shifts can fracture the tectonic plates in an organization, creating gains in some areas and grieving losses in others - fractures are rarely uneventful.
+QA or not, there is a common theme of people observing fundamental changes in priority and starting wondering if their organization still has a place for them.
 
-To use a traveling metaphor, whether you are a driver or a passenger, unexpected changes in direction and surfaces can be disorienting and even hazardous.
+To use a traveling metaphor, unexpected changes in direction and surfaces can be disorienting and even hazardous.
 
-Whenever the roads become too tricky to navigate, we need a map.
+## The Map of Change
 
-And when you need maps for anything that is not an actual road, look no further than [Simon Wardley's maps](https://en.wikipedia.org/wiki/Wardley_map).
+Tricky roads require maps, and when you need maps for anything that is not an actual road, look no further than [Simon Wardley's maps](https://en.wikipedia.org/wiki/Wardley_map).
 
 If you have never heard of "Wardley maps," it is the best-kept secret this side of a business management school and a reliable way of understanding the landscape of any topic, whether you are looking at an emerging market or trying to figure out where the next career opportunities are heading.
 
@@ -127,9 +127,9 @@ And when everything is organized for maximum efficiency to the detriment of all 
 
 The circle of change is complete, and once again, the same goes for individuals:
 
-- "That idea was mine" precedes the hard truth that the pioneer behind it was content to have the idea and not explore it.
-- "They stopped investing in our project" precedes the reality that the project peaked a couple of years ago.
-- "Some people get to have fun exploring new things" negates the reality that new ideas and opportunities keep the organization adaptable to environmental changes.
+- _"That idea was mine"_ precedes the hard truth that the pioneer behind it was content to have the idea and not explore it.
+- _"They stopped investing in our project"_ precedes the reality that the project peaked a couple of years ago.
+- _"Some people get to have fun exploring new things"_ negates the reality that new ideas and opportunities keep the organization adaptable to environmental changes.
 
 Once again, the _same goes for individuals_, who may overstay in a productive role where their skills are a perfect fit for their project needs. In that arrangement, everything they know is useful to the project, their importance grows, and their careers grow steadily.
 

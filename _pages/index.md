@@ -9,11 +9,11 @@ header:
 excerpt: >
   A personal portfolio of technical tutorials and essays on career, technology, and productivity.<br />
 feature_row:
-  - image_path: /assets/images/employability-success/main.png
-    alt: "Drawing of a pyramid in the desert, with a software developer sitting at a workstation facing the pyramid. The pyramid has five layers labeled from bottom to the top, as follows: Employability, Compensation, Growth Path, Well-Being, and Meaning."
+  - image_path: /assets/images/pioneer-settler-town-planner/main-io.png
+    alt: "An explorer arriving at a densely populated big city dressed in the style of a software developer, seen from the perspective of someone standing behind the explorer."
     title: "Featured Story"
-    excerpt: "Finding Your Purpose Is the Goal. Making the Right Choices Is the Path"
-    url: "/essay/employability-success/"
+    excerpt: "Understand Change. Predict The Future."
+    url: "/essay/pioneer-settler-town-planner/"
     btn_class: "btn--primary"
     btn_label: "Read"
   - image_path: /assets/images/artificial-empathy/main.png
