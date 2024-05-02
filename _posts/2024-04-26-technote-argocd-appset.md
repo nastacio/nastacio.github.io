@@ -1,5 +1,5 @@
 ---
-title: Mapping 3 data sources to ApplicationSet Matrix Generators in ArgoCD
+title: Mapping Three Data Sources to Matrix Generators in Argocd
 excerpt: Because sometimes only 2 data sources are not enough
 category:
  - technote
