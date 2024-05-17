@@ -14,6 +14,8 @@ toc: false
 classes: wide
 ---
 
+**Update on 05/17/2024**: Red Hat addressed the issue for ROSA later in 2023, [changing the default storage type for root volumes from `io1` to `gp3`](https://access.redhat.com/solutions/6969126) in [ROSA](https://docs.openshift.com/rosa/rosa_architecture/rosa-understanding.html).
+
 This technical note is a write-up of our investigation into overspending in our AWS bill. Our EC2 spend ran away from us for a few weeks, even though we had been on top of hibernating our self-managed clusters not in use.
 
 While drilling down the bill, we noticed a costly line item for `x.xxxx per GB-month of Provisioned IOPS SSD (io1) provisioned storage`.
@@ -64,7 +66,7 @@ A root volume is a local disk for each node, and it is used for things like host
 
 By default, the OCP installers for AWS [steer administrators towards choosing the `io1` volume type](https://docs.openshift.com/container-platform/4.12/installing/installing_aws/installing-aws-customizations.html) for the nodes.
 
-The `io1` volume type is also the suggested default for the root volumes of AWS self-managed clusters created through [RHACM](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.8), as well as the hardcoded choice for [ROSA](https://docs.openshift.com/rosa/rosa_architecture/rosa-understanding.html) clusters.
+The `io1` volume type is also the suggested default for the root volumes of AWS self-managed clusters created through [RHACM](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.8), as well as the hardcoded choice for ROSA clusters.
 
 ## Root Cause #2: Why do volumes without IO activity cost so much?
 
