@@ -9,11 +9,11 @@ header:
 excerpt: >
   A personal portfolio of technical tutorials and essays on career, technology, and productivity.<br />
 feature_row:
-  - image_path: /assets/images/pioneer-settler-town-planner/main-io.png
-    alt: "An explorer arriving at a densely populated big city dressed in the style of a software developer, seen from the perspective of someone standing behind the explorer."
+  - image_path: /assets/images/eng-prompt-eng/main-dalle-2-b.png
+    alt: "An architectural blueprint surrounded by technical drawing instruments. The blueprint contains a screen raising from its center, containing text resembling the source code of an application."
     title: "Featured Story"
-    excerpt: "Understand Change. Predict The Future."
-    url: "/essay/pioneer-settler-town-planner/"
+    excerpt: "The Conflicted Economics of Prompt Engineering in Software Development."
+    url: "/essay/eng-prompt-eng/"
     btn_class: "btn--primary"
     btn_label: "Read"
   - image_path: /assets/images/artificial-empathy/main.png
