@@ -51,9 +51,11 @@ This is the point in the discussion where someone raises their hand and asks:
 
 > Have you tried tuning a foundation model?
 
-Yes, __fine-tuning a foundation model__ is a popular solution to adapting a trained AI model to the distinct characteristics of a specific training set. Fine-tuning a model, an activity where you start from a larger AI model and show it examples that are closer to the ones in your organization, costs a tiny fraction of the cost of training a model from scratch.
+Yes, __fine-tuning a foundation model__ is a popular solution to adapting a trained AI model to the distinct characteristics of a specific training set. Fine-tuning a model, an activity where you start from a larger AI model and show it examples that are closer to the ones in your organization, costs a tiny fraction - think thousandths - of the cost of training a model from scratch.
 
-Spending "a tiny fraction of the cost" while getting better results sounds like great economics, but you have to keep in mind the starting reference point for those savings is in the realm of [tens of millions of dollars](https://en.wikipedia.org/wiki/GPT-4#:~:text=Sam%20Altman%20stated%20that%20the,was%20more%20than%20%24100%20million.) and [growing 4-5x every year](https://x.com/EpochAIResearch/status/1795870450079142126) so that bargain price tag may still run in thousands of dollars _per month_ in compute-costs alone.
+Spending a tiny fraction of the cost while getting better results sounds like great economics, but keep in mind the starting point for those savings is in the realm of [tens of millions of dollars](https://en.wikipedia.org/wiki/GPT-4#:~:text=Sam%20Altman%20stated%20that%20the,was%20more%20than%20%24100%20million.) and [growing 4-5x every year](https://x.com/EpochAIResearch/status/1795870450079142126).
+
+That bargain price tag may still run in thousands of dollars _per month_ in compute-costs alone.
 
 > _"Non-sense. I can use a local LLM and train it on a couple of GPUs I bought on eBay and get the whole thing done for the price of a good dinner."_
 
@@ -65,7 +67,7 @@ Going from a prototype to a hosted solution can take as much as [27 times the ef
 
 After all, not even all examples in the world fully cover every possible function signature or CLI command, so you have to look at [RAG patterns (Retrieval-Augmented Generation](https://research.ibm.com/blog/retrieval-augmented-generation-RAG)) to inject that knowledge into each prompt, which in turn means you will need a database, a query engine, and some time fine-tuning those augmentations to each prompt sent to the AI model.
 
-And if you are serious about using that fine-tuned model augmented with an RAG system, you will need to develop a [Machine Learning Pipeline](https://www.ibm.com/topics/machine-learning-pipeline) around that solution. While designing that pipeline, you must decide on metrics to track the model performance, methods to collect those metrics, create processes for responding to feedback, and more processes for rolling out updates.
+And if you are serious about using that fine-tuned model augmented with a RAG system, you will need to develop a [Machine Learning Pipeline](https://www.ibm.com/topics/machine-learning-pipeline) around that solution. While designing that pipeline, you must decide on metrics to track the model performance, methods to collect those metrics, create processes for responding to feedback, and more processes for rolling out updates.
 
 If that is not enough, you may also need to experiment with [alternative fine-tuning methods](https://x.com/akshay_pachaar/status/1799781859750240545) to decide on the best approach for your effort.
 
@@ -195,7 +197,7 @@ __Win: AI__
 
 After all iterations, the initial draft contained 90% of the final solution, an outstanding effort from a single-sentence prompt.
 
-Using the traditional method of looking up examples through web searches would surface all the building blocks required to build such a draft. Still, the AI could string them together much faster and generate what was [basically a technical article with steps to solve the problem](https://gist.github.com/nastacio/87c6347c1ca5c627770a25f5bf745170).
+Using the traditional method of looking up examples through web searches would surface all the building blocks required to create such draft. Still, the AI could string them together much faster and generate what was [basically a technical article with steps to solve the problem](https://gist.github.com/nastacio/87c6347c1ca5c627770a25f5bf745170).
 
 __Step 6. Iterate over the draft side-by-side with documentation__
 
@@ -225,7 +227,7 @@ Also, the AI "plateaued" in improving the quality of answers against refined pro
 
 Those issues were, however, minor relative to the overall content.
 
-As long as one understands they should not get greedy and keep iterating to get the final version of the instructions, the AI saves time relative to starting from a blank page.
+As long as one understands they should not spend too much time trying to keep refining prompts in an attempt to get the final version of the instructions, the AI saves time relative to starting from a blank page.
 
 __Step 9. Write a public blog or technote.__
 
