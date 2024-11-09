@@ -9,11 +9,11 @@ header:
 excerpt: >
   A personal portfolio of technical tutorials and essays on career, technology, and productivity.<br />
 feature_row:
-  - image_path: /assets/images/eng-prompt-eng/main-dalle-2-b.png
-    alt: "An architectural blueprint surrounded by technical drawing instruments. The blueprint contains a screen raising from its center, containing text resembling the source code of an application."
+  - image_path: /assets/images/space-nuclear-llm/main-hybrid.png
+    alt: "..."
     title: "Featured Story"
-    excerpt: "The Conflicted Economics of Prompt Engineering in Software Development."
-    url: "/essay/eng-prompt-eng/"
+    excerpt: "The unserious economics of an AGI revolution."
+    url: "/essay/industrial-revolution-llm/"
     btn_class: "btn--primary"
     btn_label: "Read"
   - image_path: /assets/images/artificial-empathy/main.png
