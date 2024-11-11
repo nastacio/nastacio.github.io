@@ -13,8 +13,6 @@ toc: true
 
 _Make your travel preparation list for the long journey ahead._
 
----
-
 | !["A developer stands holding a laptop and waves toward the reader. To their left, a system administrator stands next to a robot. On the far right, a man in a suit holds a bag full of money."](/assets/images/leaving-the-cloud/leaving-the-cloud-main.png) |
 | :--: |
 | _While moving from on-premises to the Cloud and back, the core stakeholders are developers, operators, and finance people (including product managers._ |
@@ -28,8 +26,6 @@ Money is a sensitive subject, and people get understandably nervous when they fe
 Wedged between both camps, we find developers increasingly relying on the Cloud for central, and sometimes irreplaceable, portions of product design and runtime. Keep a close eye on this group of stakeholders as you read along because [their actions ultimately upended the Cloud adoption trajectory.](https://redmonk.com/sogrady/2010/09/09/the-new-kingmakers/)
 
 This story is about what we need to understand heading into the next stage of Cloud adoption. Before getting to that next stage, and acknowledging that this new phase may be the first contact with the Cloud for many people, let's get started with a quick recap of how we got to the Cloud. This recap also sets the context for when you hear the siren songs of the ["leaving the cloud"](https://world.hey.com/dhh/why-we-re-leaving-the-cloud-654b47e0) movement.
-
----
 
 ## Wave #1: Resource consolidation
 
@@ -48,8 +44,6 @@ Servers progressively migrated from under developers' desks toward in-house data
 | ![Developers, operators and product managers stand on the left. Servers under developers' desks and servers next to operators move to the right, into a box representing the Cloud provider. One of the three money bags sitting next to the product manager moves to the Cloud provider box as well. There are positive check marks next to an arrow indicating each move.](/assets/images/leaving-the-cloud/leaving-the-cloud-wave-1.png) |
 |:--:|
 | _In the first wave of Cloud migrations, physical servers move to a Cloud provider, and everyone welcomes the change._ |
-
----
 
 ## Wave #2: Outsourcing the middle layer
 
@@ -79,8 +73,6 @@ To illustrate the point to people unfamiliar with operating middleware, it was n
 |:--:|
 | _Middleware services move to the Cloud during the next migration wave. Operations teams lose a few people, and more of the budget shift toward Cloud services._ |
 
----
-
 ## Wave #3: The age of containerization
 
 With infrastructure and services firmly in the Cloud, the next abstraction was packaging and running code in the infrastructure. [Heroku](https://www.heroku.com/) and, for a while, [Pivotal](https://www.cloudfoundry.org/) established the concept of "push-and-run" for applications, leveraging a smattering of managed service offerings for popular middleware such as PostgreSQL, MongoDB, and Redis.
@@ -97,7 +89,7 @@ At this stage, containers became the de-facto unit of development, build, packag
 |:--:|
 | _Containers, containers, containers. Applications, middleware, continuous integration pipelines, continuous deployment, runtime engines, packaging. Everything is a container._ |
 
-From the sidelines, we also saw some progress in the FaaS camp, primarily as an event handler for managed services. While FaaS could also handle other asynchronous events, its development and packaging model was conspicuously different from the now dominant container model. With a proliferation of container services that could process many of those same events, and FaaS adoption remained a relatively niche practice.
+From the sidelines, we also saw some progress in the FaaS camp, primarily as an event handler for managed services. While FaaS could also handle other asynchronous events, its development and packaging model was conspicuously different from the now dominant container model. With a proliferation of container services that could process many of those same events, FaaS adoption remained a relatively niche practice.
 
 When we look at this stage from the perspective of our stakeholders, we still see developers more or less unaffected by yet another significant shift. For developers, containers still offered a runtime and filesystem interface akin to an operating system, so application code ran virtually unchanged.
 
@@ -105,19 +97,17 @@ Containers also addressed an evolving demand for lift-and-shift scenarios for se
 
 For **operations** people, this wave felt very different. The familiar operating system interfaces for application runtimes were gone, and they needed to retool their practices considerably. Every runbook, troubleshooting, log management, monitoring, and deployment procedure had to be revisited, rewired, or rewritten. Every meaningful application management task now happened in the container layer.
 
-New entrants redefine the vendor scene for infrastructure and platform management, waltzing through a landscape free of incumbent products and unburdened with the upkeep costs of legacy offerings. One key aspect of this evolution in IT tools was the diversity of service offerings and reasonably sophisticated open-source projects that could handle the operational loads of large systems. Operations teams could create cohesive management platforms that would have been unthinkable in the past.
+New entrants redefined the vendor scene for infrastructure and platform management, waltzing through a landscape free of incumbent products and unburdened with the upkeep costs of legacy offerings. One key aspect of this evolution in IT tools was the diversity of service offerings and reasonably sophisticated open-source projects that could handle the operational loads of large systems. Operations teams could create cohesive management platforms that would have been unthinkable in the past.
 
-For **finance** people, that was the first wave where things feel significantly different. The budget line items looked different, and there were fewer requests to replace the aging hardware that had survived the first two waves of Cloud migration. On the other hand, operations and development required subscriptions to new SaaS offerings and were hungry for service instances in their Cloud providers.
+For **finance** people, that was the first wave where things felt significantly different. The budget line items looked different, and there were fewer requests to replace the aging hardware that had survived the first two waves of Cloud migration. On the other hand, operations and development required subscriptions to new SaaS offerings and were hungry for service instances in their Cloud providers.
 
 Attempts at curbing budgets with draconian controls backfired, with internal [platform engineering](https://platformengineering.org/blog/what-is-platform-engineering) teams being crushed by exponential increases in demand from operations and development teams.
 
 Suddenly [OpEx](https://www.investopedia.com/terms/c/capitalexpenditure.asp#toc-capex-vs-operating-expenses-opex) was the new [CaPex](https://www.investopedia.com/terms/c/capitalexpenditure.asp#toc-what-are-capital-expenditures-capex).
 
----
+## A New Home With a New Architecture
 
-## A new home. With a new architecture.
-
-In another stop before we look back to on-premises deployments, let's pause to understand where the industry is after the preceding waves of Cloud migration.
+In another stop before we look back to on-premises deployments, let's pause to understand where the industry sat after the preceding waves of Cloud migration.
 
 I picked a few salient categories and generalized what one could consider the state of the art if starting a new architecture from a blank slate today:
 
@@ -127,17 +117,15 @@ I picked a few salient categories and generalized what one could consider the st
 
 **Continuous integration (CI)**: The standardization around container images spreads across all build pipeline vendors. Developers expect CI tools to have native support for building container images, preferably from something as simple as the URL of a Git repository containing a [`Dockerfile`](https://docs.docker.com/engine/reference/builder/).
 
-**Architecture**: The economies of scale in the Cloud enabled the business case for various middleware offerings that had not been possible before. Cloud providers boast service catalogs with hundreds of offerings. Many offerings are "cloud native" (only available through a Cloud provider.) As a result, new software architectures incorporate capabilities that did not exist ten years ago. Without a reason to consider an eventual shift to on-premises deployments, many architectures now include "long-tail" services that would be cost-prohibitive for individual companies without massive economies of scale.
+**Architecture**: The economies of scale in the Cloud enables the business case for various middleware offerings that had not been possible before. Cloud providers boast service catalogs with hundreds of offerings. Many offerings are "cloud native" (only available through a Cloud provider.) As a result, new software architectures incorporate capabilities that did not exist ten years ago. Without a reason to consider an eventual shift to on-premises deployments, many architectures now include "long-tail" services that would be cost-prohibitive for individual companies without massive economies of scale.
 
-**Budget**: A reduced infrastructure and service footprint on-premise means a conversion of CaPex into OpEx. The increasing dependency on Cloud-based services means developers and CI pipelines have a newfound hunger for Cloud resources. Continuous Delivery models increasingly rely on multi-stage pipelines (dev/test/stage/prod/others), further multiplying resource consumption. Now overseeing a considerably smaller infrastructure and service footprint, operations teams are gutted in size and breadth of skills.
+**Budget**: A reduced infrastructure and service footprint on-premise means a conversion of CaPex into OpEx. The increasing dependency on Cloud-based services means developers and CI pipelines have a newfound hunger for Cloud resources. Continuous Delivery models increasingly rely on multi-stage pipelines (dev/test/stage/prod/others), further multiplying resource consumption. Now overseeing a considerably smaller physical infrastructure and service footprint, operations teams are gutted in size and breadth of skills.
 
 | ![Map of the migration from on-premises deployments (no cloud) to Infrastructure as a Service (wave 1,) to Platform as a Service and SaaS (wave 2,) to containerized PaaS + SaaS (wave 3) . The last stage of the migration shows an arrow with the label "journey back?" point back to the on-premises deployment.](/assets/images/leaving-the-cloud/leaving-the-cloud-we-are-here.png) |
 |:--:|
 | _After successive waves of migration, from infrastructure to services, the journey back from the Cloud is an uncharted step forward rather than threading back through the old path._ |
 
----
-
-## Check your (invoice) baggage before the trip.
+## Check your (invoice) baggage before the trip
 
 (I promise this is the last stop before looking at the on-premises journey.)
 
@@ -166,8 +154,6 @@ Before heading into the next section, I assume people wanting to leave the Cloud
 - Hire a specialized **Cloud cost-management consultancy**. In many cases, their services may pay for themselves with savings within a couple of billing cycles.
 
 After following these steps, you may still feel like your Cloud bill is too high and decide to plunge head-first into the next section. However, that migration will undoubtedly take a while. It never hurts to be spending less every month while your organization goes through that process.
-
----
 
 ## "That is it! We are leaving the Cloud!"
 
@@ -220,8 +206,6 @@ In short, and as a reality check, your on-call rotation will need more people in
 | ![There is a void on the right, where the Cloud box used to show up in all previous pictures. On the left, a startled system administrator looks at several hardware boxes full of (logical) container boxes. The entire picture is surrounded by labels of popular middleware, such as MongoDB, Cassandra, Kubernetes, as well as demanding compliance standards, such as HIPAA, GDPR, and SOCs. The product manager shows next to still dashed silhouettes of money bags.](/assets/images/leaving-the-cloud/leaving-the-cloud-strikes-back.png) |
 |:--:|
 | _System administrators may be hard-pressed to rebuild their IaaS and PaaS practices to host the same level and diversity of services found in a typical Cloud provider. And it may not necessarily cost less._ |
-
----
 
 ## Conclusion
 

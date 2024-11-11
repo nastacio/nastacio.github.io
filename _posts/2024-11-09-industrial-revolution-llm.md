@@ -14,7 +14,7 @@ toc: true
 published: true
 ---
 
-__The unserious economics of an AGI revolution__
+__The Unserious Economics of an AGI Revolution__
 
 ![First-person perspective with the horizon line in the background. On the left, a man works in the field with a rake. On the right, a NASA space shuttle rocket stands in the distance on a takeoff pad with two nuclear power cooling towers.](/assets/images/space-nuclear-llm/main-hybrid.png "From plowing fields to space exploration")
 
