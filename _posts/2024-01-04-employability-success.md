@@ -208,7 +208,7 @@ My cautionary tale in this story is that even though I was clear in my objective
 
 For someone mid-career, six years is a dangerously long detour.
 
-It took me a new job and another three years to catch the Kubernetes bus and take a seat, becoming skilled on the platform and acknowledged as someone who could [advise other developers](https://medium.com/@dnastacio/the-art-and-science-of-probing-a-kubernetes-container-db1f16539080) and [system administrators](https://dnastacio.medium.com/running-knative-services-on-aws-spot-instances-5b73202e89dc).
+It took me a new job and another three years to catch the Kubernetes bus and take a seat, becoming skilled on the platform and acknowledged as someone who could [advise other developers](https://nastacio.github.io/technote/k8s-probes-art-science/) and [system administrators](https://nastacio.github.io/tutorial/knative-interruptible/).
 
 Nine years had passed.
 
