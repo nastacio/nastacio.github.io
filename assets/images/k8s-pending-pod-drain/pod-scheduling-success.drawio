@@ -1,0 +1,94 @@
+<mxfile host="65bd71144e">
+    <diagram id="SZgZUIBA6v_IzPTl6dWH" name="Page-1">
+        <mxGraphModel dx="786" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Cluster" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fillStyle=auto;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="50" width="460" height="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Node 10.0.x.y" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="2" vertex="1">
+                    <mxGeometry x="240" y="40" width="200" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Daemon Set Pods" style="rounded=0;whiteSpace=wrap;html=1;" parent="4" vertex="1">
+                    <mxGeometry x="10" y="30" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Daemon Set Pod" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="4" vertex="1">
+                    <mxGeometry x="10" y="75" width="120" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Node" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="2" vertex="1">
+                    <mxGeometry x="20" y="40" width="200" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Daemon Set Pods" style="rounded=0;whiteSpace=wrap;html=1;" parent="3" vertex="1">
+                    <mxGeometry x="10" y="30" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Pod" style="rounded=0;whiteSpace=wrap;html=1;" parent="3" vertex="1">
+                    <mxGeometry x="10" y="70" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Pod" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="3" vertex="1">
+                    <mxGeometry x="10" y="110" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Node" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="2" vertex="1">
+                    <mxGeometry x="240" y="260" width="200" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Daemon Set Pods" style="rounded=0;whiteSpace=wrap;html=1;" parent="5" vertex="1">
+                    <mxGeometry x="20" y="30" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Pod" style="rounded=0;whiteSpace=wrap;html=1;" parent="5" vertex="1">
+                    <mxGeometry x="20" y="70" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Node" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="2" vertex="1">
+                    <mxGeometry x="20" y="260" width="200" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Daemon Set Pods" style="rounded=0;whiteSpace=wrap;html=1;" parent="6" vertex="1">
+                    <mxGeometry x="10" y="30" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Pod" style="rounded=0;whiteSpace=wrap;html=1;" parent="6" vertex="1">
+                    <mxGeometry x="10" y="70" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Pod" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="6" vertex="1">
+                    <mxGeometry x="10" y="110" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="&lt;div style=&quot;color: rgb(0, 0, 0); font-weight: normal; font-size: 12px; line-height: 18px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #800000;&quot;&gt;Pods evicted from node 10.0.x.y&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;fontFamily=Helvetica;fillColor=none;fontColor=#333333;strokeColor=#666666;labelBackgroundColor=none;spacingTop=4;spacingBottom=4;spacingLeft=4;spacingRight=4;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="340" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;startArrow=none;" parent="1" source="14" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="550" y="310" as="sourcePoint"/>
+                        <mxPoint x="360" y="450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="Pod" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="420" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="endArrow=classic;html=1;fontFamily=Helvetica;dashed=1;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="19" target="16">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="380" y="460" as="sourcePoint"/>
+                        <mxPoint x="430" y="410" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" value="" style="endArrow=classic;html=1;fontFamily=Helvetica;dashed=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="13">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="530" y="360" as="sourcePoint"/>
+                        <mxPoint x="190" y="240" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="31" value="" style="endArrow=classic;html=1;fontFamily=Helvetica;dashed=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="19" target="14">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="530" y="360" as="sourcePoint"/>
+                        <mxPoint x="200" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="&lt;div style=&quot;color: rgb(0, 0, 0); font-weight: normal; font-size: 12px; line-height: 18px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #800000;&quot;&gt;Unschedulable Daemon Set Pod finally scheduled&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;fontFamily=Helvetica;fillColor=none;fontColor=#333333;strokeColor=#666666;labelBackgroundColor=none;spacingTop=4;spacingBottom=4;spacingLeft=4;spacingRight=4;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="530" y="190" width="110" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="" style="endArrow=classic;html=1;fontFamily=Helvetica;dashed=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="33" target="17">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="540" y="362.5" as="sourcePoint"/>
+                        <mxPoint x="190" y="240" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
