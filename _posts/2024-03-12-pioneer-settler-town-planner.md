@@ -83,9 +83,9 @@ The pattern of PST roles of change in an organization repeats itself in smaller 
 
 Naturally, each pillar still needs to focus and specialize in its primary function, but within each pillar, smaller change flows require attention, too.
 
-Balance in that allocation across all levels is the recipe for sustained success.
+Balancing that allocation across all levels is the recipe for sustained success.
 
-Neglect the exploration of the new and innovation stalls. Neglect the elaboration of a promising activity and growth stalls. Ignore the day-to-day work management, and long-term becomes impossible.
+Neglect the exploration of the new and innovation stalls. Neglect the elaboration of a promising activity and growth stalls. Ignore the day-to-day work management, and long-term success becomes impossible.
 
 That goes for individuals, too.
 
@@ -129,17 +129,17 @@ The circle of change is complete, and once again, the same goes for individuals:
 
 - _"That idea was mine"_ precedes the hard truth that the pioneer behind it was content to have the idea and not explore it.
 - _"They stopped investing in our project"_ precedes the reality that the project peaked a couple of years ago.
-- _"Some people get to have fun exploring new things"_ negates the reality that new ideas and opportunities keep the organization adaptable to environmental changes.
+- _"Some people get to have fun exploring new things"_ negates the reality that new ideas and opportunities keep the organization adaptable to changes in the environment.
 
-Once again, the _same goes for individuals_, who may overstay in a productive role where their skills are a perfect fit for their project needs. In that arrangement, everything they know is useful to the project, their importance grows, and their careers grow steadily.
+Once again, the _same goes for individuals_, who may overstay in a productive role where their skills are a perfect fit for their project needs. In that stagnant arrangement, everything they know is useful to the project, their importance grows, and their careers grow steadily.
 
 As projects and products inevitably reach a plateau and start to decline, successful software developers may suddenly find themselves at the top of the wrong hill.
 
-They missed their exit turn.
+They miss their exit turn.
 
 ## Master of Journeys, not Destinations
 
-To bring the theory full circle toward practice, let's use the dispirited trek of our QA colleagues in the opening story. Orgs focusing heavily on town planning activities need quality control more than quality assurance.
+To bring the theory full circle toward practice, let's use the dispirited trek of our QA colleagues in the story opening. Organizations focusing heavily on town planning activities need quality control more than quality assurance.
 
 Conversely, portions of the organization pioneering new technologies may not have much output to worry about quality controls or assurances. Awareness of the territory tells QA engineers to seek roles in growth areas where quality matters and the nature of what is measured is constantly changing.
 
@@ -147,7 +147,7 @@ Yes, I am saying QA engineers, at their core, are settlers.
 
 But can a settler-at-heart thrive in town planning? Yes, it is a fractal of change, remember?
 
-As the business looks to streamline processes, often through automation, there is still room for _fewer_ individuals to develop new techniques to make the process more efficient.
+As the business looks to streamline processes, often through automation, there is still room for _fewer_ individuals to develop new techniques to optimize the processes.
 
 ### A Case Study in Adaptation
 
@@ -167,9 +167,9 @@ Not really; Netflix [did it](https://netflixtechblog.com/chaos-engineering-upgra
 
 If you are not a software developer but feel like software developers get all the credit, the way forward is to inject more coding into your work.
 
-For example, if you are a **technical writer** and your product has an API, create a better way of validating code samples in documentation examples. If the product only has a graphical user interface, find a way to use LLMs to generate documentation pages while a bot monitors users iterating with the product interface. There is (almost) always a way.
+For example, if you are a __technical writer__ and your product has an API, create a better way of validating code samples in documentation examples. If the product only has a graphical user interface, find a way to use LLMs to generate documentation pages while a bot monitors users iterating with the product interface. There is (almost) always a way.
 
-And if you are an **SRE**, we are living through a golden age of opportunity for AI-assisted operations, with LLMs increasingly showing potential in helping people formulate commands during critsits or perform basic [troubleshooting assessments](https://itnext.io/kubenstein-a-gpt-powered-kubernetes-administrator-a8334f413d6f).
+And if you are an __SRE__, we are living through a golden age of opportunity for AI-assisted operations, with LLMs increasingly showing potential in helping people formulate commands during critsits or perform basic [troubleshooting assessments](https://itnext.io/kubenstein-a-gpt-powered-kubernetes-administrator-a8334f413d6f).
 
 ## Keep Moving, Keep Building
 
@@ -179,11 +179,11 @@ On a smaller scale, because the map of change flows is a fractal of smaller PST 
 - Even the fastest-growing businesses need standardization and stability to avoid chaos.
 - Even the most profitable mature business can use innovation in smaller uncharted processes.
 
-While these smaller actions can make you more valuable to your organization - and happier, too - the moral of the story is that when the only constant is change, becoming a specialist in navigating change is a core competency to succeed in our profession.
+While these smaller actions can make you more valuable to your organization - and happier, too - the moral of the story is that when the only constant is change, becoming a specialist in navigating change is a core competence to succeed in our profession.
 
 And now you have a map, too.
 
-As long as you are willing to keep moving, your present situation is just a stop on your way to where the organization needs you.
+As long as you are willing to keep moving, your present situation is just a stop on the way to where the organization needs you.
 
 If commerce downtown is too crowded or life as a shopkeeper is not for you, there is always money to be made transporting goods across town limits or erecting new buildings.
 
