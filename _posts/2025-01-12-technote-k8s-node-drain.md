@@ -63,7 +63,7 @@ metadata:
 
 ## Safely Scheduling the Pod
 
-The quickest solution to this type of problem is not the safest: delete a few random pods on the node to free up enough capacity in the node and then cound on the Kubernetes scheduling algorithm to schedule daemonset pods before regular workloads.
+The quickest solution to this type of problem is not the safest: delete a few random pods on the node to free up enough capacity in the node and then count on the Kubernetes scheduling algorithm to schedule daemonset pods before regular workloads.
 
 There are at least two problems with this "solution":
 
@@ -77,7 +77,7 @@ A node drain will evict pods that do not originate from a daemonset, allowing th
 
 **Important:** The drain operation cordons the node to prevent new workloads from being scheduled to that node, so it is important to remember to uncordon the node in the end.
 
-To start cautiously, one shuld use the `--dry-run=client` parameter to simulate the operation:
+To start cautiously, one should use the `--dry-run=client` parameter to simulate the operation:
 
 Note we do not want to evict the other daemonset pods in the node, so we should always use the `--ignore-daemonset` flag in this scenario:
 
