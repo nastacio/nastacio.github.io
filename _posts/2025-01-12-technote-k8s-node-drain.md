@@ -161,7 +161,7 @@ kubectl drain ip-10-0-x-y.ec2.internal \
     --delete-emptydir-data \
     --disable-eviction \
     --force \
-    --grace-period=60s \
+    --grace-period=60 \
     --timeout=600s
 
 # Don't forget to uncordon the node so that customer workloads
