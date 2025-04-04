@@ -6,3 +6,6 @@ knative-interruptible/README.html
 .DS_Store
 _site
 Gemfile.lock
+assets/images/k8s-cluster-size/~$Metrics.xlsx
+assets/images/k8s-cluster-size/~$illustrations.pptx
+assets/images/k8s-cluster-size/~$k8s-size-illustrations.pptx
