@@ -48,7 +48,7 @@ When we look at the process of creating new worlds — or, more accurately, augm
 2. **Create**: Collaborate with colleagues and stakeholders of the existing system to augment it, creating a new one in the process.
 3. **Educate**: This activity splits into colleagues educating one another about their contributions to the system and then educating users about changes to existing concepts, relationships, and workflows.
 
-![Circular diagram with three nodes: reality, knowledge, and "new world". Each node links unidirectionally to the next node, with each link having a label. From "reality" to "knowledge", the label is "learn". From "knowledge" to "new world", the label is "create". From "new world" to "reality", the label is "educate".](images/business-a-tower-1-composite.png)
+![Circular diagram with three nodes: reality, knowledge, and "new world". Each node links unidirectionally to the next node, with each link having a label. From "reality" to "knowledge", the label is "learn". From "knowledge" to "new world", the label is "create". From "new world" to "reality", the label is "educate".](/assets/images/rewriting-education/business-a-tower-1-composite.png)
 
 These three activities exist — with different names — across all mainstream software development processes. Get all three right with a half-decent business case, and success is all but guaranteed. Bungle any of the three, and then _failure_ is guaranteed.
 
