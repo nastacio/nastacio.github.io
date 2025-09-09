@@ -64,7 +64,7 @@ After covering the basics of Kustomize and Helm, it is time to explore the Good,
 
 ## The Good #1: Kustomize as a Library Cart
 
-If your organization has a curated library of configuration resources, Kustomize is an ideal companion to select elements from that library. Add only the filenames of the resources you need into a kustomization.yaml file, indicate the Git URL (and "ref" !) of the folders containing the resources, and the Kustomize pipeline inside Argo CD or Flux CD will apply those resources to the target system.
+If your organization has a curated library of configuration resources, Kustomize is an ideal companion to select elements from that library. Add only the filenames of the resources you need into a "kustomization.yaml" file, indicate the Git URL (and "ref" !) of the folders containing the resources, and the Kustomize pipeline inside Argo CD or Flux CD will apply those resources to the target system.
 
 Although Helm can achieve the same result of applying select resources from an extensive repository, both [Argo](https://argo-cd.readthedocs.io/en/stable/user-guide/helm/) and [Flux](https://fluxcd.io/flux/guides/helmreleases/) require the creation of a wrapper resource for each Chart.
 
@@ -78,7 +78,7 @@ __No ambiguity__. To take its opinionated approach a step further, Kustomize req
 
 As a result, one can be confident about the resulting configuration after applying Kustomize to the contents of a GitOps repository by looking solely at the repository and without consulting any other source.
 
-| ![Side-by-side drawing of a folder with a Kubernetes Job resource and a kustomization.yaml file containing a "resources" element selecting the file for the Job resource and a long "replacements" field targeting a secret deep inside a "container" element inside the Job specification.](/assets/images/kustomize-good-bad-ugly/Gitops-Kustomize-Fig-4-Addressing.png) |
+| ![Side-by-side drawing of a folder with a Kubernetes Job resource and a "kustomization.yaml" file containing a "resources" element selecting the file for the Job resource and a long "replacements" field targeting a secret deep inside a "container" element inside the Job specification.](/assets/images/kustomize-good-bad-ugly/Gitops-Kustomize-Fig-4-Addressing.png) |
 |:---:|
 | Kustomize's design calls for a deterministic selection of resources based on a precise selection of resource types, names, and field locations. |
 
@@ -94,9 +94,9 @@ Surely, we can expect a GitOps practitioner to know their way around both concep
 
 __Is it a file or a resource?__ For example, the entry-level construct ["resources"](https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/resource/) locates resources by filename. At the same time, an element such as ["patches"](https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/patches/) follows the conceptual model of Kubernetes patches, with meta-references to fields in a custom resource definition. Sitting in between filesystems and patches, we find elements such as "replacements," combining some addressability concepts from patching and what looks like JSON selectors.
 
-| ![Sticky figure looks at three files: a.yaml containing a ConfigMap resource, b.yaml containing another ConfigMap resource, and a kustomization.yaml file containing a "resources" element referencing both files. The kustomization.yaml file has a "replacements" section referencing a "ConfigMap", making the sticky figure wonder which of a.yaml or b.yaml contain matching resources.](/assets/images/kustomize-good-bad-ugly/Gitops-Kustomize-Fig-4-Kustomize-Resource-orFile.png) |
+| ![Sticky figure looks at three files: a.yaml containing a ConfigMap resource, b.yaml containing another ConfigMap resource, and a "kustomization.yaml" file containing a "resources" element referencing both files. The "kustomization.yaml" file has a "replacements" section referencing a "ConfigMap", making the sticky figure wonder which of a.yaml or b.yaml contain matching resources.](/assets/images/kustomize-good-bad-ugly/Gitops-Kustomize-Fig-4-Kustomize-Resource-orFile.png) |
 |:---:|
-| A kustomization.yaml file contains a mixture of concepts, with some constructs based on filenames ("resources") and other constructs based on Go-templating ("replacements") and a few based on Kubernetes custom resources (some forms of "patches.") |
+| A "kustomization.yaml" file contains a mixture of concepts, with some constructs based on filenames ("resources") and other constructs based on Go-templating ("replacements") and a few based on Kubernetes custom resources (some forms of "patches.") |
 
 I know Kustomize advocates may become proficient at the context-switching and consider it just a matter of course when working with configuration management in Kubernetes. Naturally, I would not expect Kustomize to use a constrained file-based approach like the "sed" syntax to modify a file. Still, it is hard to gloss over how reading a Kustomize file calls for the somewhat challenging ability to mentally assemble these different concepts, especially when I look at the most common workarounds:
 
@@ -146,7 +146,7 @@ Not really.
 
 Combining both means practitioners have to design (and observe) the boundary where Kustomize ends and Helm starts. For instance, the design may call for the "kustomization.yaml" file only allowing the usage of the "resources" clause, deferring everything else to Helm.But what stops a new team member, unaware of that boundary, from using a "replacements" or "patch" annotation to avoid creating another Helm chart?
 
-| ![Two-part figure. The tree representation of a folder containing a kustomization.yaml file and two Helm charts is on the left. The kustomization.yaml file contains a "resources" section referencing one of the Helm charts. The right side of the picture has two robots carrying two objects, with one of the robots standing on the back of the first.](/assets/images/kustomize-good-bad-ugly/Gitops-Kustomize-Fig-Hybrid.png) |
+| ![Two-part figure. The tree representation of a folder containing a "kustomization.yaml" file and two Helm charts is on the left. The "kustomization.yaml" file contains a "resources" section referencing one of the Helm charts. The right side of the picture has two robots carrying two objects, with one of the robots standing on the back of the first.](/assets/images/kustomize-good-bad-ugly/Gitops-Kustomize-Fig-Hybrid.png) |
 |:---:|
 | A custom configuration management plugin can run different commands in a sequence. With great flexibility comes the great need to design, document, and enforce bespoke workflows. |
 
