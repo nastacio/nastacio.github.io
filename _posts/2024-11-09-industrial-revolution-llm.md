@@ -16,7 +16,7 @@ published: true
 
 __The Unserious Economics of an AGI Revolution__
 
-![First-person perspective with the horizon line in the background. On the left, a man works in the field with a rake. On the right, a NASA space shuttle rocket stands in the distance on a takeoff pad with two nuclear power cooling towers.](/assets/images/space-nuclear-llm/main-hybrid.png "From plowing fields to space exploration")
+![First-person perspective with the horizon line in the background. On the left, a man works in the field with a rake. On the right, a NASA space shuttle rocket stands in the distance on a takeoff pad with two nuclear power cooling towers.](/assets/images/space-nuclear-llm/main-remastered.png "From plowing fields to space exploration")
 
 Let's talk about revolution—the industrial kind.
 
@@ -185,7 +185,7 @@ In software development, we created parallel hierarchies between seniority and h
 
 We had IT people running around with carts and cables, performing various forms of inventory, maintenance, and repairs.
 
-![A black-and-white cartoon-style image illustrating a software development office from the early 2000s. The office has stick-figure senior developers at their desks surrounded by a 'computing sprawl' of desktop computers, mid-range servers under their desks, and large, high-powered test servers in a secure area nearby.](/assets/images/space-nuclear-llm/computer-sprawl.png)
+![A black-and-white cartoon-style image illustrating a software development office from the early 2000s. The office has stick-figure senior developers at their desks surrounded by a 'computing sprawl' of desktop computers, mid-range servers under their desks, and large, high-powered test servers in a secure area nearby.](/assets/images/space-nuclear-llm/computer-sprawl-remastered.png)
 
 Cloud computing started to take root at the center of the technology industry because it solved the first problem (physical space) and helped with the second one (people). Economies of scale and an imperative of market capture generated an industry of [freemium](https://en.wikipedia.org/wiki/Freemium) service offerings backed by an unsustainable reliance on open-source quasi-products.
 
